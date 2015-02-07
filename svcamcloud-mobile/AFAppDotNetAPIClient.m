@@ -33,7 +33,7 @@ static NSString * const AFAppDotNetAPIBaseURLString = @"https://api.app.net/";
         _sharedClient = [[AFAppDotNetAPIClient alloc] initWithBaseURL:[NSURL URLWithString:AFAppDotNetAPIBaseURLString]];
         _sharedClient.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
     });
-    
+
     return _sharedClient;
 }
 

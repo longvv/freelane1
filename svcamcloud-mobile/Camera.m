@@ -8,6 +8,7 @@
 
 #import "Camera.h"
 #import "WebServiceManager.h"
+#import "AppAuthenticationManager.h"
 
 @interface Camera()
 @property (readwrite, strong, nonatomic) NSString *cameraId;
@@ -33,7 +34,9 @@
     
     return self;
 }
-+ (NSURLSessionDataTask *)globalCameraListWithCameraCode:(NSString *)cameraCode andFinishBlock:(void (^)(NSArray *))finishBlock errorBlock:(void (^)(NSError *))errorBLock{
+
++ (NSURLSessionDataTask *)globalCameraListWithFinishBlock:(void (^)(NSArray *))finishBlock errorBlock:(void (^)(NSError *))errorBLock{
+       [[AFAppDotNetAPIClient sharedClient].requestSerializer setValue:[AppAuthenticationManager sessionKeyString] forHTTPHeaderField:@"X-Tokens"];
     return [[AFAppDotNetAPIClient sharedClient] GET:[WebServiceManager listCameraWebServicePath] parameters:nil success:^(NSURLSessionDataTask * __unused task, id JSON) {
         NSArray *cameraFromResponse = [JSON valueForKeyPath:@"camera_list"];
         NSMutableArray *mutablecameras = [NSMutableArray arrayWithCapacity:[cameraFromResponse count]];
@@ -51,6 +54,21 @@
         }
     }];
 
+    
+}
+
++ (NSURLSessionDataTask *)globalGetCameraViewURLWithCameraCode:(NSString *)cameraCode andFinishBlock:(void (^)(NSString *viewUrl))finishBlock errorBlock:(void (^)(NSError *))errorBLock{
+    [[AFAppDotNetAPIClient sharedClient].requestSerializer setValue:[AppAuthenticationManager sessionKeyString] forHTTPHeaderField:@"X-Tokens"];
+    return [[AFAppDotNetAPIClient sharedClient] GET:[WebServiceManager loginWebServicePath] parameters:cameraCode  success:^(NSURLSessionDataTask * __unused task, id JSON) {
+        NSString *viewUrl = [JSON valueForKeyPath:@"url"];
+        if (finishBlock) {
+            finishBlock(viewUrl);
+        }
+    } failure:^(NSURLSessionDataTask *__unused task, NSError *error) {
+        if (errorBLock) {
+            errorBLock(error);
+        }
+    }];
     
 }
 

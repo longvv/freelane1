@@ -39,6 +39,7 @@
 }
 
 + (NSURLSessionDataTask *)globalRecordListWithCameraCode:(NSString *)cameraCode andFinishBlock:(void (^)(NSArray *records))finishBlock andErrorBlock:(void (^)(NSError *error))errorBlock{
+       [[AFAppDotNetAPIClient sharedClient].requestSerializer setValue:[AppAuthenticationManager sessionKeyString] forHTTPHeaderField:@"X-Tokens"];
     return [[AFAppDotNetAPIClient sharedClient] GET:[WebServiceManager listCameraWebServicePath] parameters:cameraCode success:^(NSURLSessionDataTask * __unused task, id JSON) {
         NSArray *recordsFromResponse = [JSON valueForKeyPath:@"record_list"];
         NSMutableArray *mutableRecords = [NSMutableArray arrayWithCapacity:[recordsFromResponse count]];

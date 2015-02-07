@@ -18,6 +18,6 @@
 @property (readonly, nonatomic) CameraStatus status;
 
 - (instancetype)initWithAttributes:(NSDictionary *)attributes;
-+ (NSURLSessionDataTask *)globalCameraListWithCameraCode:(NSString *) cameraCode andFinishBlock:(void (^)(NSArray *cameras))finishBlock errorBlock:(void (^)( NSError *error))errorBLock ;
-
++ (NSURLSessionDataTask *)globalCameraListWithFinishBlock:(void (^)(NSArray *cameras))finishBlock errorBlock:(void (^)( NSError *error))errorBLock ;
++ (NSURLSessionDataTask *)globalGetCameraViewURLWithCameraCode:(NSString *)cameraCode andFinishBlock:(void (^)(NSString *viewUrl))finishBlock errorBlock:(void (^)(NSError *))errorBLock;
 @end
