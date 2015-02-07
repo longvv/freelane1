@@ -1,1049 +1,597 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>006CDF2286E7657379783C78</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E37422592227F7C03A2B8226</string>
-				<string>08DF146D881B60CEDE927A22</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>08DF146D881B60CEDE927A22</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-svcamcloud-mobile.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-svcamcloud-mobile/Pods-svcamcloud-mobile.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>512681CA74A2B067D5186950</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DA1672C6B980360E94164D6B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7EE71BEE1A1CD9B7F96D3F91</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-svcamcloud-mobile/Pods-svcamcloud-mobile-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>92D38CC8B86906BD4C39E496</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>DA1672C6B980360E94164D6B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-svcamcloud-mobile.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E37422592227F7C03A2B8226</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-svcamcloud-mobile.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-svcamcloud-mobile/Pods-svcamcloud-mobile.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E0703E1A85C63C00881F09</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E8E070491A85C63C00881F09</string>
-				<string>E8E070631A85C63C00881F09</string>
-				<string>E8E070481A85C63C00881F09</string>
-				<string>006CDF2286E7657379783C78</string>
-				<string>512681CA74A2B067D5186950</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E0703F1A85C63C00881F09</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0610</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>FreelancerTeam.</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>E8E070461A85C63C00881F09</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.1.1</string>
-					</dict>
-					<key>E8E0705F1A85C63C00881F09</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.1.1</string>
-						<key>TestTargetID</key>
-						<string>E8E070461A85C63C00881F09</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>E8E070421A85C63C00881F09</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>E8E0703E1A85C63C00881F09</string>
-			<key>productRefGroup</key>
-			<string>E8E070481A85C63C00881F09</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>E8E070461A85C63C00881F09</string>
-				<string>E8E0705F1A85C63C00881F09</string>
-			</array>
-		</dict>
-		<key>E8E070421A85C63C00881F09</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E8E070681A85C63C00881F09</string>
-				<string>E8E070691A85C63C00881F09</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E8E070431A85C63C00881F09</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E8E070801A85D92C00881F09</string>
-				<string>E8E0707F1A85D92C00881F09</string>
-				<string>E8E0704D1A85C63C00881F09</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E8E070441A85C63C00881F09</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>ED2DD2A6DB78429A81CE4D8B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E8E070451A85C63C00881F09</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E8E070821A85D92C00881F09</string>
-				<string>E8E070811A85D92C00881F09</string>
-				<string>E8E070581A85C63C00881F09</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E8E070461A85C63C00881F09</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E8E0706A1A85C63C00881F09</string>
-			<key>buildPhases</key>
-			<array>
-				<string>92D38CC8B86906BD4C39E496</string>
-				<string>E8E070431A85C63C00881F09</string>
-				<string>E8E070441A85C63C00881F09</string>
-				<string>E8E070451A85C63C00881F09</string>
-				<string>7EE71BEE1A1CD9B7F96D3F91</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>svcamcloud-mobile</string>
-			<key>productName</key>
-			<string>svcamcloud-mobile</string>
-			<key>productReference</key>
-			<string>E8E070471A85C63C00881F09</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>E8E070471A85C63C00881F09</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>svcamcloud-mobile.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E8E070481A85C63C00881F09</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E8E070471A85C63C00881F09</string>
-				<string>E8E070601A85C63C00881F09</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E070491A85C63C00881F09</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E8E070701A85D92C00881F09</string>
-				<string>E8E070731A85D92C00881F09</string>
-				<string>E8E0707E1A85D92C00881F09</string>
-				<string>E8E070571A85C63C00881F09</string>
-				<string>E8E0704A1A85C63C00881F09</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>svcamcloud-mobile</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E0704A1A85C63C00881F09</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E8E0704B1A85C63C00881F09</string>
-				<string>E8E0704C1A85C63C00881F09</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E0704B1A85C63C00881F09</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E0704C1A85C63C00881F09</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E0704D1A85C63C00881F09</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E8E0704C1A85C63C00881F09</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E8E070571A85C63C00881F09</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E070581A85C63C00881F09</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E8E070571A85C63C00881F09</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E8E0705C1A85C63C00881F09</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E8E070671A85C63C00881F09</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E8E0705D1A85C63C00881F09</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E8E0705E1A85C63C00881F09</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E8E0705F1A85C63C00881F09</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E8E0706D1A85C63C00881F09</string>
-			<key>buildPhases</key>
-			<array>
-				<string>E8E0705C1A85C63C00881F09</string>
-				<string>E8E0705D1A85C63C00881F09</string>
-				<string>E8E0705E1A85C63C00881F09</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>E8E070621A85C63C00881F09</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>svcamcloud-mobileTests</string>
-			<key>productName</key>
-			<string>svcamcloud-mobileTests</string>
-			<key>productReference</key>
-			<string>E8E070601A85C63C00881F09</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>E8E070601A85C63C00881F09</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>svcamcloud-mobileTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E8E070611A85C63C00881F09</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>E8E0703F1A85C63C00881F09</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>E8E070461A85C63C00881F09</string>
-			<key>remoteInfo</key>
-			<string>svcamcloud-mobile</string>
-		</dict>
-		<key>E8E070621A85C63C00881F09</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>E8E070461A85C63C00881F09</string>
-			<key>targetProxy</key>
-			<string>E8E070611A85C63C00881F09</string>
-		</dict>
-		<key>E8E070631A85C63C00881F09</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E8E070661A85C63C00881F09</string>
-				<string>E8E070641A85C63C00881F09</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>svcamcloud-mobileTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E070641A85C63C00881F09</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E8E070651A85C63C00881F09</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E070651A85C63C00881F09</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E070661A85C63C00881F09</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>svcamcloud_mobileTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E070671A85C63C00881F09</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E8E070661A85C63C00881F09</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E8E070681A85C63C00881F09</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E8E070691A85C63C00881F09</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E8E0706A1A85C63C00881F09</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E8E0706B1A85C63C00881F09</string>
-				<string>E8E0706C1A85C63C00881F09</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E8E0706B1A85C63C00881F09</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E37422592227F7C03A2B8226</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>svcamcloud-mobile/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E8E0706C1A85C63C00881F09</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>08DF146D881B60CEDE927A22</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>svcamcloud-mobile/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E8E0706D1A85C63C00881F09</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E8E0706E1A85C63C00881F09</string>
-				<string>E8E0706F1A85C63C00881F09</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E8E0706E1A85C63C00881F09</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>svcamcloud-mobileTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/svcamcloud-mobile.app/svcamcloud-mobile</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E8E0706F1A85C63C00881F09</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>svcamcloud-mobileTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/svcamcloud-mobile.app/svcamcloud-mobile</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E8E070701A85D92C00881F09</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E8E070711A85D92C00881F09</string>
-				<string>E8E070721A85D92C00881F09</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>AppControl</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E070711A85D92C00881F09</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E070721A85D92C00881F09</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E070731A85D92C00881F09</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E8E070741A85D92C00881F09</string>
-				<string>E8E070771A85D92C00881F09</string>
-				<string>E8E070781A85D92C00881F09</string>
-				<string>E8E070791A85D92C00881F09</string>
-				<string>E8E0707A1A85D92C00881F09</string>
-				<string>E8E0707D1A85D92C00881F09</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Class</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E070741A85D92C00881F09</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E8E070751A85D92C00881F09</string>
-				<string>E8E070761A85D92C00881F09</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Controller</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E070751A85D92C00881F09</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E070761A85D92C00881F09</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E070771A85D92C00881F09</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Manager</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E070781A85D92C00881F09</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Model</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E070791A85D92C00881F09</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E0707A1A85D92C00881F09</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E8E0707B1A85D92C00881F09</string>
-				<string>E8E0707C1A85D92C00881F09</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Storyboards</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E0707B1A85D92C00881F09</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>LaunchScreen.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E0707C1A85D92C00881F09</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E0707D1A85D92C00881F09</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>View</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E0707E1A85D92C00881F09</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Library</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E8E0707F1A85D92C00881F09</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E8E070721A85D92C00881F09</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E8E070801A85D92C00881F09</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E8E070761A85D92C00881F09</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E8E070811A85D92C00881F09</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E8E0707B1A85D92C00881F09</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E8E070821A85D92C00881F09</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E8E0707C1A85D92C00881F09</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ED2DD2A6DB78429A81CE4D8B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DA1672C6B980360E94164D6B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>E8E0703F1A85C63C00881F09</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		441009CB1A86772C006AEA75 /* WebServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 441009CA1A86772C006AEA75 /* WebServiceManager.m */; };
+		441009CE1A867A50006AEA75 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 441009CD1A867A50006AEA75 /* User.m */; };
+		441009D11A867B1E006AEA75 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 441009D01A867B1E006AEA75 /* Camera.m */; };
+		441009DA1A868317006AEA75 /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = 441009D91A868317006AEA75 /* Record.m */; };
+		441009DD1A86860D006AEA75 /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 441009DC1A86860D006AEA75 /* AFAppDotNetAPIClient.m */; };
+		441009EC1A869C1E006AEA75 /* CameraViewObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 441009EB1A869C1E006AEA75 /* CameraViewObject.m */; };
+		441009EF1A869FCA006AEA75 /* AppAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 441009EE1A869FCA006AEA75 /* AppAuthenticationManager.m */; };
+		E8E0704D1A85C63C00881F09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E0704C1A85C63C00881F09 /* main.m */; };
+		E8E070581A85C63C00881F09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E070571A85C63C00881F09 /* Images.xcassets */; };
+		E8E070671A85C63C00881F09 /* svcamcloud_mobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E070661A85C63C00881F09 /* svcamcloud_mobileTests.m */; };
+		E8E0707F1A85D92C00881F09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E070721A85D92C00881F09 /* AppDelegate.m */; };
+		E8E070801A85D92C00881F09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E070761A85D92C00881F09 /* ViewController.m */; };
+		E8E070811A85D92C00881F09 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E0707B1A85D92C00881F09 /* LaunchScreen.xib */; };
+		E8E070821A85D92C00881F09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E0707C1A85D92C00881F09 /* Main.storyboard */; };
+		ED2DD2A6DB78429A81CE4D8B /* libPods-svcamcloud-mobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1672C6B980360E94164D6B /* libPods-svcamcloud-mobile.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8E070611A85C63C00881F09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8E0703F1A85C63C00881F09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8E070461A85C63C00881F09;
+			remoteInfo = "svcamcloud-mobile";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08DF146D881B60CEDE927A22 /* Pods-svcamcloud-mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-svcamcloud-mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-svcamcloud-mobile/Pods-svcamcloud-mobile.release.xcconfig"; sourceTree = "<group>"; };
+		441009C91A86772C006AEA75 /* WebServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceManager.h; sourceTree = SOURCE_ROOT; };
+		441009CA1A86772C006AEA75 /* WebServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceManager.m; sourceTree = SOURCE_ROOT; };
+		441009CC1A867A50006AEA75 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = SOURCE_ROOT; };
+		441009CD1A867A50006AEA75 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = SOURCE_ROOT; };
+		441009CF1A867B1E006AEA75 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = SOURCE_ROOT; };
+		441009D01A867B1E006AEA75 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = SOURCE_ROOT; };
+		441009D31A867BC3006AEA75 /* CameraStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraStatus.h; sourceTree = "<group>"; };
+		441009D81A868317006AEA75 /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = SOURCE_ROOT; };
+		441009D91A868317006AEA75 /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = SOURCE_ROOT; };
+		441009DB1A86860D006AEA75 /* AFAppDotNetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAppDotNetAPIClient.h; sourceTree = SOURCE_ROOT; };
+		441009DC1A86860D006AEA75 /* AFAppDotNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppDotNetAPIClient.m; sourceTree = SOURCE_ROOT; };
+		441009EA1A869C1E006AEA75 /* CameraViewObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewObject.h; sourceTree = SOURCE_ROOT; };
+		441009EB1A869C1E006AEA75 /* CameraViewObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewObject.m; sourceTree = SOURCE_ROOT; };
+		441009ED1A869FCA006AEA75 /* AppAuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppAuthenticationManager.h; sourceTree = SOURCE_ROOT; };
+		441009EE1A869FCA006AEA75 /* AppAuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppAuthenticationManager.m; sourceTree = SOURCE_ROOT; };
+		DA1672C6B980360E94164D6B /* libPods-svcamcloud-mobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-svcamcloud-mobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E37422592227F7C03A2B8226 /* Pods-svcamcloud-mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-svcamcloud-mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-svcamcloud-mobile/Pods-svcamcloud-mobile.debug.xcconfig"; sourceTree = "<group>"; };
+		E8E070471A85C63C00881F09 /* svcamcloud-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "svcamcloud-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E0704B1A85C63C00881F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8E0704C1A85C63C00881F09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8E070571A85C63C00881F09 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E8E070601A85C63C00881F09 /* svcamcloud-mobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "svcamcloud-mobileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E070651A85C63C00881F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8E070661A85C63C00881F09 /* svcamcloud_mobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = svcamcloud_mobileTests.m; sourceTree = "<group>"; };
+		E8E070711A85D92C00881F09 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E8E070721A85D92C00881F09 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E8E070751A85D92C00881F09 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E8E070761A85D92C00881F09 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E8E0707B1A85D92C00881F09 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		E8E0707C1A85D92C00881F09 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8E070441A85C63C00881F09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED2DD2A6DB78429A81CE4D8B /* libPods-svcamcloud-mobile.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E0705D1A85C63C00881F09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		006CDF2286E7657379783C78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E37422592227F7C03A2B8226 /* Pods-svcamcloud-mobile.debug.xcconfig */,
+				08DF146D881B60CEDE927A22 /* Pods-svcamcloud-mobile.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		441009D21A867BA5006AEA75 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				441009D31A867BC3006AEA75 /* CameraStatus.h */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		512681CA74A2B067D5186950 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA1672C6B980360E94164D6B /* libPods-svcamcloud-mobile.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8E0703E1A85C63C00881F09 = {
+			isa = PBXGroup;
+			children = (
+				E8E070491A85C63C00881F09 /* svcamcloud-mobile */,
+				E8E070631A85C63C00881F09 /* svcamcloud-mobileTests */,
+				E8E070481A85C63C00881F09 /* Products */,
+				006CDF2286E7657379783C78 /* Pods */,
+				512681CA74A2B067D5186950 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E8E070481A85C63C00881F09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8E070471A85C63C00881F09 /* svcamcloud-mobile.app */,
+				E8E070601A85C63C00881F09 /* svcamcloud-mobileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8E070491A85C63C00881F09 /* svcamcloud-mobile */ = {
+			isa = PBXGroup;
+			children = (
+				E8E070701A85D92C00881F09 /* AppControl */,
+				E8E070731A85D92C00881F09 /* Class */,
+				E8E0707E1A85D92C00881F09 /* Library */,
+				E8E070571A85C63C00881F09 /* Images.xcassets */,
+				E8E0704A1A85C63C00881F09 /* Supporting Files */,
+			);
+			path = "svcamcloud-mobile";
+			sourceTree = "<group>";
+		};
+		E8E0704A1A85C63C00881F09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8E0704B1A85C63C00881F09 /* Info.plist */,
+				E8E0704C1A85C63C00881F09 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8E070631A85C63C00881F09 /* svcamcloud-mobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8E070661A85C63C00881F09 /* svcamcloud_mobileTests.m */,
+				E8E070641A85C63C00881F09 /* Supporting Files */,
+			);
+			path = "svcamcloud-mobileTests";
+			sourceTree = "<group>";
+		};
+		E8E070641A85C63C00881F09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8E070651A85C63C00881F09 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E8E070701A85D92C00881F09 /* AppControl */ = {
+			isa = PBXGroup;
+			children = (
+				E8E070711A85D92C00881F09 /* AppDelegate.h */,
+				E8E070721A85D92C00881F09 /* AppDelegate.m */,
+			);
+			path = AppControl;
+			sourceTree = "<group>";
+		};
+		E8E070731A85D92C00881F09 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				441009D21A867BA5006AEA75 /* Enums */,
+				E8E070741A85D92C00881F09 /* Controller */,
+				E8E070771A85D92C00881F09 /* Manager */,
+				E8E070781A85D92C00881F09 /* Model */,
+				E8E070791A85D92C00881F09 /* Resources */,
+				E8E0707A1A85D92C00881F09 /* Storyboards */,
+				E8E0707D1A85D92C00881F09 /* View */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		E8E070741A85D92C00881F09 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E8E070751A85D92C00881F09 /* ViewController.h */,
+				E8E070761A85D92C00881F09 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E8E070771A85D92C00881F09 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				441009DB1A86860D006AEA75 /* AFAppDotNetAPIClient.h */,
+				441009DC1A86860D006AEA75 /* AFAppDotNetAPIClient.m */,
+				441009C91A86772C006AEA75 /* WebServiceManager.h */,
+				441009CA1A86772C006AEA75 /* WebServiceManager.m */,
+				441009ED1A869FCA006AEA75 /* AppAuthenticationManager.h */,
+				441009EE1A869FCA006AEA75 /* AppAuthenticationManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		E8E070781A85D92C00881F09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				441009CC1A867A50006AEA75 /* User.h */,
+				441009CD1A867A50006AEA75 /* User.m */,
+				441009CF1A867B1E006AEA75 /* Camera.h */,
+				441009D01A867B1E006AEA75 /* Camera.m */,
+				441009D81A868317006AEA75 /* Record.h */,
+				441009D91A868317006AEA75 /* Record.m */,
+				441009EA1A869C1E006AEA75 /* CameraViewObject.h */,
+				441009EB1A869C1E006AEA75 /* CameraViewObject.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E8E070791A85D92C00881F09 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E8E0707A1A85D92C00881F09 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E8E0707B1A85D92C00881F09 /* LaunchScreen.xib */,
+				E8E0707C1A85D92C00881F09 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E8E0707D1A85D92C00881F09 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E8E0707E1A85D92C00881F09 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8E070461A85C63C00881F09 /* svcamcloud-mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8E0706A1A85C63C00881F09 /* Build configuration list for PBXNativeTarget "svcamcloud-mobile" */;
+			buildPhases = (
+				92D38CC8B86906BD4C39E496 /* Check Pods Manifest.lock */,
+				E8E070431A85C63C00881F09 /* Sources */,
+				E8E070441A85C63C00881F09 /* Frameworks */,
+				E8E070451A85C63C00881F09 /* Resources */,
+				7EE71BEE1A1CD9B7F96D3F91 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "svcamcloud-mobile";
+			productName = "svcamcloud-mobile";
+			productReference = E8E070471A85C63C00881F09 /* svcamcloud-mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8E0705F1A85C63C00881F09 /* svcamcloud-mobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8E0706D1A85C63C00881F09 /* Build configuration list for PBXNativeTarget "svcamcloud-mobileTests" */;
+			buildPhases = (
+				E8E0705C1A85C63C00881F09 /* Sources */,
+				E8E0705D1A85C63C00881F09 /* Frameworks */,
+				E8E0705E1A85C63C00881F09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8E070621A85C63C00881F09 /* PBXTargetDependency */,
+			);
+			name = "svcamcloud-mobileTests";
+			productName = "svcamcloud-mobileTests";
+			productReference = E8E070601A85C63C00881F09 /* svcamcloud-mobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8E0703F1A85C63C00881F09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = FreelancerTeam.;
+				TargetAttributes = {
+					E8E070461A85C63C00881F09 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					E8E0705F1A85C63C00881F09 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = E8E070461A85C63C00881F09;
+					};
+				};
+			};
+			buildConfigurationList = E8E070421A85C63C00881F09 /* Build configuration list for PBXProject "svcamcloud-mobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8E0703E1A85C63C00881F09;
+			productRefGroup = E8E070481A85C63C00881F09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8E070461A85C63C00881F09 /* svcamcloud-mobile */,
+				E8E0705F1A85C63C00881F09 /* svcamcloud-mobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8E070451A85C63C00881F09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E070821A85D92C00881F09 /* Main.storyboard in Resources */,
+				E8E070811A85D92C00881F09 /* LaunchScreen.xib in Resources */,
+				E8E070581A85C63C00881F09 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E0705E1A85C63C00881F09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7EE71BEE1A1CD9B7F96D3F91 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-svcamcloud-mobile/Pods-svcamcloud-mobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92D38CC8B86906BD4C39E496 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8E070431A85C63C00881F09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				441009DD1A86860D006AEA75 /* AFAppDotNetAPIClient.m in Sources */,
+				441009CE1A867A50006AEA75 /* User.m in Sources */,
+				441009CB1A86772C006AEA75 /* WebServiceManager.m in Sources */,
+				441009EF1A869FCA006AEA75 /* AppAuthenticationManager.m in Sources */,
+				441009DA1A868317006AEA75 /* Record.m in Sources */,
+				E8E070801A85D92C00881F09 /* ViewController.m in Sources */,
+				E8E0707F1A85D92C00881F09 /* AppDelegate.m in Sources */,
+				441009EC1A869C1E006AEA75 /* CameraViewObject.m in Sources */,
+				441009D11A867B1E006AEA75 /* Camera.m in Sources */,
+				E8E0704D1A85C63C00881F09 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E0705C1A85C63C00881F09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E070671A85C63C00881F09 /* svcamcloud_mobileTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8E070621A85C63C00881F09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8E070461A85C63C00881F09 /* svcamcloud-mobile */;
+			targetProxy = E8E070611A85C63C00881F09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E8E070681A85C63C00881F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8E070691A85C63C00881F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8E0706B1A85C63C00881F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E37422592227F7C03A2B8226 /* Pods-svcamcloud-mobile.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "svcamcloud-mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E8E0706C1A85C63C00881F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08DF146D881B60CEDE927A22 /* Pods-svcamcloud-mobile.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "svcamcloud-mobile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E8E0706E1A85C63C00881F09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "svcamcloud-mobileTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/svcamcloud-mobile.app/svcamcloud-mobile";
+			};
+			name = Debug;
+		};
+		E8E0706F1A85C63C00881F09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "svcamcloud-mobileTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/svcamcloud-mobile.app/svcamcloud-mobile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8E070421A85C63C00881F09 /* Build configuration list for PBXProject "svcamcloud-mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E070681A85C63C00881F09 /* Debug */,
+				E8E070691A85C63C00881F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8E0706A1A85C63C00881F09 /* Build configuration list for PBXNativeTarget "svcamcloud-mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E0706B1A85C63C00881F09 /* Debug */,
+				E8E0706C1A85C63C00881F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8E0706D1A85C63C00881F09 /* Build configuration list for PBXNativeTarget "svcamcloud-mobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E0706E1A85C63C00881F09 /* Debug */,
+				E8E0706F1A85C63C00881F09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8E0703F1A85C63C00881F09 /* Project object */;
+}
