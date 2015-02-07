@@ -18,4 +18,11 @@
     return nil;
 }
 
++(NSString *)listRecordWebServicePath{
+    return nil;
+}
+
++(NSString *) viewCameraWebServicePath{
+    return nil;
+}
 @end

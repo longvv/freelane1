@@ -13,4 +13,6 @@
 
 +(NSString *) listCameraWebServicePath;
 +(NSString *) loginWebServicePath;
++(NSString *) listRecordWebServicePath;
++(NSString *) viewCameraWebServicePath;
 @end
