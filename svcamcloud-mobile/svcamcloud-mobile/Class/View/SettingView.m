@@ -36,9 +36,15 @@
 
 - (IBAction)btnRememberPressed:(id)sender {
     //  NSString *//
-}
+    
+   }
 
 - (IBAction)btnSavePressed:(id)sender {
+    NSString *serverUrl = self.txtDomain.text;
+    NSString *port = self.txtPort.text;
+    [UserDataManager saveServerBaseUrl:serverUrl];
+    [UserDataManager saveServerPort:port];
+
 }
 
 @end
