@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aRi-RO-uME">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--My Recording View Controller-->
+        <scene sceneID="vFe-dA-fJP">
+            <objects>
+                <viewController storyboardIdentifier="MyRecordingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aRi-RO-uME" customClass="MyRecordingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uz1-ed-Oc0"/>
+                        <viewControllerLayoutGuide type="bottom" id="U8t-kW-rTC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1xL-jo-Mu2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nw5-j8-eCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="467" y="214"/>
+        </scene>
+    </scenes>
+</document>

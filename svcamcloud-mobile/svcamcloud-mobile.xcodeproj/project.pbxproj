@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		441009CB1A86772C006AEA75 /* WebServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 441009CA1A86772C006AEA75 /* WebServiceManager.m */; };
-		441009CE1A867A50006AEA75 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 441009CD1A867A50006AEA75 /* User.m */; };
-		441009D11A867B1E006AEA75 /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = 441009D01A867B1E006AEA75 /* Camera.m */; };
-		441009DA1A868317006AEA75 /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = 441009D91A868317006AEA75 /* Record.m */; };
-		441009DD1A86860D006AEA75 /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 441009DC1A86860D006AEA75 /* AFAppDotNetAPIClient.m */; };
-		441009EC1A869C1E006AEA75 /* CameraViewObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 441009EB1A869C1E006AEA75 /* CameraViewObject.m */; };
-		441009EF1A869FCA006AEA75 /* AppAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 441009EE1A869FCA006AEA75 /* AppAuthenticationManager.m */; };
 		E88BDCCF1A8745BD00B1D56A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCCC1A8745BD00B1D56A /* BaseViewController.m */; };
 		E88BDCD01A8745BD00B1D56A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCCE1A8745BD00B1D56A /* LoginViewController.m */; };
+		E88BDCD71A874B2D00B1D56A /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCD21A874B2D00B1D56A /* AFAppDotNetAPIClient.m */; };
+		E88BDCD81A874B2D00B1D56A /* AppAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCD41A874B2D00B1D56A /* AppAuthenticationManager.m */; };
+		E88BDCD91A874B2D00B1D56A /* WebServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCD61A874B2D00B1D56A /* WebServiceManager.m */; };
+		E88BDCE21A874B7300B1D56A /* Camera.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCDB1A874B7300B1D56A /* Camera.m */; };
+		E88BDCE31A874B7300B1D56A /* CameraViewObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCDD1A874B7300B1D56A /* CameraViewObject.m */; };
+		E88BDCE41A874B7300B1D56A /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCDF1A874B7300B1D56A /* Record.m */; };
+		E88BDCE51A874B7300B1D56A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCE11A874B7300B1D56A /* User.m */; };
+		E88BDCEC1A874F5C00B1D56A /* CustomMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCE91A874F5C00B1D56A /* CustomMenuCell.m */; };
+		E88BDCED1A874F5C00B1D56A /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCEB1A874F5C00B1D56A /* MenuTableViewController.m */; };
+		E88BDCF01A8758E400B1D56A /* MyRecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCEF1A8758E400B1D56A /* MyRecordingViewController.m */; };
+		E88BDCF31A8758F800B1D56A /* MyCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCF21A8758F800B1D56A /* MyCameraViewController.m */; };
+		E88BDCF51A87590900B1D56A /* MyCameraStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88BDCF41A87590900B1D56A /* MyCameraStoryboard.storyboard */; };
+		E88BDCF71A876AC700B1D56A /* MyRecordingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88BDCF61A876AC700B1D56A /* MyRecordingStoryboard.storyboard */; };
 		E8E0704D1A85C63C00881F09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E0704C1A85C63C00881F09 /* main.m */; };
 		E8E070581A85C63C00881F09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E070571A85C63C00881F09 /* Images.xcassets */; };
 		E8E070671A85C63C00881F09 /* svcamcloud_mobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E070661A85C63C00881F09 /* svcamcloud_mobileTests.m */; };
 		E8E0707F1A85D92C00881F09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E070721A85D92C00881F09 /* AppDelegate.m */; };
-		E8E070801A85D92C00881F09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E070761A85D92C00881F09 /* ViewController.m */; };
+		E8E070801A85D92C00881F09 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E070761A85D92C00881F09 /* SettingViewController.m */; };
 		E8E070811A85D92C00881F09 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E0707B1A85D92C00881F09 /* LaunchScreen.xib */; };
 		E8E070821A85D92C00881F09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E0707C1A85D92C00881F09 /* Main.storyboard */; };
 		ED2DD2A6DB78429A81CE4D8B /* libPods-svcamcloud-mobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1672C6B980360E94164D6B /* libPods-svcamcloud-mobile.a */; };
@@ -38,27 +44,37 @@
 
 /* Begin PBXFileReference section */
 		08DF146D881B60CEDE927A22 /* Pods-svcamcloud-mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-svcamcloud-mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-svcamcloud-mobile/Pods-svcamcloud-mobile.release.xcconfig"; sourceTree = "<group>"; };
-		441009C91A86772C006AEA75 /* WebServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceManager.h; sourceTree = SOURCE_ROOT; };
-		441009CA1A86772C006AEA75 /* WebServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceManager.m; sourceTree = SOURCE_ROOT; };
-		441009CC1A867A50006AEA75 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = SOURCE_ROOT; };
-		441009CD1A867A50006AEA75 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = SOURCE_ROOT; };
-		441009CF1A867B1E006AEA75 /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = SOURCE_ROOT; };
-		441009D01A867B1E006AEA75 /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = SOURCE_ROOT; };
 		441009D31A867BC3006AEA75 /* CameraStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraStatus.h; sourceTree = "<group>"; };
-		441009D81A868317006AEA75 /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = SOURCE_ROOT; };
-		441009D91A868317006AEA75 /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = SOURCE_ROOT; };
-		441009DB1A86860D006AEA75 /* AFAppDotNetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAppDotNetAPIClient.h; sourceTree = SOURCE_ROOT; };
-		441009DC1A86860D006AEA75 /* AFAppDotNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppDotNetAPIClient.m; sourceTree = SOURCE_ROOT; };
-		441009EA1A869C1E006AEA75 /* CameraViewObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewObject.h; sourceTree = SOURCE_ROOT; };
-		441009EB1A869C1E006AEA75 /* CameraViewObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewObject.m; sourceTree = SOURCE_ROOT; };
-		441009ED1A869FCA006AEA75 /* AppAuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppAuthenticationManager.h; sourceTree = SOURCE_ROOT; };
-		441009EE1A869FCA006AEA75 /* AppAuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppAuthenticationManager.m; sourceTree = SOURCE_ROOT; };
 		DA1672C6B980360E94164D6B /* libPods-svcamcloud-mobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-svcamcloud-mobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37422592227F7C03A2B8226 /* Pods-svcamcloud-mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-svcamcloud-mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-svcamcloud-mobile/Pods-svcamcloud-mobile.debug.xcconfig"; sourceTree = "<group>"; };
 		E88BDCCB1A8745BD00B1D56A /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		E88BDCCC1A8745BD00B1D56A /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		E88BDCCD1A8745BD00B1D56A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		E88BDCCE1A8745BD00B1D56A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		E88BDCD11A874B2D00B1D56A /* AFAppDotNetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAppDotNetAPIClient.h; sourceTree = "<group>"; };
+		E88BDCD21A874B2D00B1D56A /* AFAppDotNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAppDotNetAPIClient.m; sourceTree = "<group>"; };
+		E88BDCD31A874B2D00B1D56A /* AppAuthenticationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppAuthenticationManager.h; sourceTree = "<group>"; };
+		E88BDCD41A874B2D00B1D56A /* AppAuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppAuthenticationManager.m; sourceTree = "<group>"; };
+		E88BDCD51A874B2D00B1D56A /* WebServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceManager.h; sourceTree = "<group>"; };
+		E88BDCD61A874B2D00B1D56A /* WebServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceManager.m; sourceTree = "<group>"; };
+		E88BDCDA1A874B7300B1D56A /* Camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		E88BDCDB1A874B7300B1D56A /* Camera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Camera.m; sourceTree = "<group>"; };
+		E88BDCDC1A874B7300B1D56A /* CameraViewObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewObject.h; sourceTree = "<group>"; };
+		E88BDCDD1A874B7300B1D56A /* CameraViewObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewObject.m; sourceTree = "<group>"; };
+		E88BDCDE1A874B7300B1D56A /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
+		E88BDCDF1A874B7300B1D56A /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
+		E88BDCE01A874B7300B1D56A /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		E88BDCE11A874B7300B1D56A /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		E88BDCE81A874F5C00B1D56A /* CustomMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomMenuCell.h; sourceTree = "<group>"; };
+		E88BDCE91A874F5C00B1D56A /* CustomMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMenuCell.m; sourceTree = "<group>"; };
+		E88BDCEA1A874F5C00B1D56A /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
+		E88BDCEB1A874F5C00B1D56A /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
+		E88BDCEE1A8758E400B1D56A /* MyRecordingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRecordingViewController.h; sourceTree = "<group>"; };
+		E88BDCEF1A8758E400B1D56A /* MyRecordingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRecordingViewController.m; sourceTree = "<group>"; };
+		E88BDCF11A8758F800B1D56A /* MyCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCameraViewController.h; sourceTree = "<group>"; };
+		E88BDCF21A8758F800B1D56A /* MyCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCameraViewController.m; sourceTree = "<group>"; };
+		E88BDCF41A87590900B1D56A /* MyCameraStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyCameraStoryboard.storyboard; sourceTree = "<group>"; };
+		E88BDCF61A876AC700B1D56A /* MyRecordingStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyRecordingStoryboard.storyboard; sourceTree = "<group>"; };
 		E8E070471A85C63C00881F09 /* svcamcloud-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "svcamcloud-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8E0704B1A85C63C00881F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8E0704C1A85C63C00881F09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,8 +84,8 @@
 		E8E070661A85C63C00881F09 /* svcamcloud_mobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = svcamcloud_mobileTests.m; sourceTree = "<group>"; };
 		E8E070711A85D92C00881F09 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E8E070721A85D92C00881F09 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E8E070751A85D92C00881F09 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E8E070761A85D92C00881F09 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E8E070751A85D92C00881F09 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		E8E070761A85D92C00881F09 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		E8E0707B1A85D92C00881F09 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		E8E0707C1A85D92C00881F09 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +132,17 @@
 				DA1672C6B980360E94164D6B /* libPods-svcamcloud-mobile.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E88BDCE71A874F5C00B1D56A /* SideMenuControl */ = {
+			isa = PBXGroup;
+			children = (
+				E88BDCE81A874F5C00B1D56A /* CustomMenuCell.h */,
+				E88BDCE91A874F5C00B1D56A /* CustomMenuCell.m */,
+				E88BDCEA1A874F5C00B1D56A /* MenuTableViewController.h */,
+				E88BDCEB1A874F5C00B1D56A /* MenuTableViewController.m */,
+			);
+			path = SideMenuControl;
 			sourceTree = "<group>";
 		};
 		E8E0703E1A85C63C00881F09 = {
@@ -202,12 +229,17 @@
 		E8E070741A85D92C00881F09 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E88BDCE71A874F5C00B1D56A /* SideMenuControl */,
 				E88BDCCB1A8745BD00B1D56A /* BaseViewController.h */,
 				E88BDCCC1A8745BD00B1D56A /* BaseViewController.m */,
 				E88BDCCD1A8745BD00B1D56A /* LoginViewController.h */,
 				E88BDCCE1A8745BD00B1D56A /* LoginViewController.m */,
-				E8E070751A85D92C00881F09 /* ViewController.h */,
-				E8E070761A85D92C00881F09 /* ViewController.m */,
+				E8E070751A85D92C00881F09 /* SettingViewController.h */,
+				E8E070761A85D92C00881F09 /* SettingViewController.m */,
+				E88BDCEE1A8758E400B1D56A /* MyRecordingViewController.h */,
+				E88BDCEF1A8758E400B1D56A /* MyRecordingViewController.m */,
+				E88BDCF11A8758F800B1D56A /* MyCameraViewController.h */,
+				E88BDCF21A8758F800B1D56A /* MyCameraViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -215,12 +247,12 @@
 		E8E070771A85D92C00881F09 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				441009DB1A86860D006AEA75 /* AFAppDotNetAPIClient.h */,
-				441009DC1A86860D006AEA75 /* AFAppDotNetAPIClient.m */,
-				441009C91A86772C006AEA75 /* WebServiceManager.h */,
-				441009CA1A86772C006AEA75 /* WebServiceManager.m */,
-				441009ED1A869FCA006AEA75 /* AppAuthenticationManager.h */,
-				441009EE1A869FCA006AEA75 /* AppAuthenticationManager.m */,
+				E88BDCD11A874B2D00B1D56A /* AFAppDotNetAPIClient.h */,
+				E88BDCD21A874B2D00B1D56A /* AFAppDotNetAPIClient.m */,
+				E88BDCD31A874B2D00B1D56A /* AppAuthenticationManager.h */,
+				E88BDCD41A874B2D00B1D56A /* AppAuthenticationManager.m */,
+				E88BDCD51A874B2D00B1D56A /* WebServiceManager.h */,
+				E88BDCD61A874B2D00B1D56A /* WebServiceManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -228,14 +260,14 @@
 		E8E070781A85D92C00881F09 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				441009CC1A867A50006AEA75 /* User.h */,
-				441009CD1A867A50006AEA75 /* User.m */,
-				441009CF1A867B1E006AEA75 /* Camera.h */,
-				441009D01A867B1E006AEA75 /* Camera.m */,
-				441009D81A868317006AEA75 /* Record.h */,
-				441009D91A868317006AEA75 /* Record.m */,
-				441009EA1A869C1E006AEA75 /* CameraViewObject.h */,
-				441009EB1A869C1E006AEA75 /* CameraViewObject.m */,
+				E88BDCDA1A874B7300B1D56A /* Camera.h */,
+				E88BDCDB1A874B7300B1D56A /* Camera.m */,
+				E88BDCDC1A874B7300B1D56A /* CameraViewObject.h */,
+				E88BDCDD1A874B7300B1D56A /* CameraViewObject.m */,
+				E88BDCDE1A874B7300B1D56A /* Record.h */,
+				E88BDCDF1A874B7300B1D56A /* Record.m */,
+				E88BDCE01A874B7300B1D56A /* User.h */,
+				E88BDCE11A874B7300B1D56A /* User.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,6 +284,8 @@
 			children = (
 				E8E0707B1A85D92C00881F09 /* LaunchScreen.xib */,
 				E8E0707C1A85D92C00881F09 /* Main.storyboard */,
+				E88BDCF41A87590900B1D56A /* MyCameraStoryboard.storyboard */,
+				E88BDCF61A876AC700B1D56A /* MyRecordingStoryboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -317,7 +351,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = FreelancerTeam.;
+				ORGANIZATIONNAME = LTTeam.;
 				TargetAttributes = {
 					E8E070461A85C63C00881F09 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -352,8 +386,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E88BDCF51A87590900B1D56A /* MyCameraStoryboard.storyboard in Resources */,
 				E8E070821A85D92C00881F09 /* Main.storyboard in Resources */,
 				E8E070811A85D92C00881F09 /* LaunchScreen.xib in Resources */,
+				E88BDCF71A876AC700B1D56A /* MyRecordingStoryboard.storyboard in Resources */,
 				E8E070581A85C63C00881F09 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,17 +441,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				441009DD1A86860D006AEA75 /* AFAppDotNetAPIClient.m in Sources */,
-				441009CE1A867A50006AEA75 /* User.m in Sources */,
+				E88BDCD91A874B2D00B1D56A /* WebServiceManager.m in Sources */,
+				E88BDCF31A8758F800B1D56A /* MyCameraViewController.m in Sources */,
+				E88BDCEC1A874F5C00B1D56A /* CustomMenuCell.m in Sources */,
+				E88BDCF01A8758E400B1D56A /* MyRecordingViewController.m in Sources */,
 				E88BDCCF1A8745BD00B1D56A /* BaseViewController.m in Sources */,
-				441009CB1A86772C006AEA75 /* WebServiceManager.m in Sources */,
-				441009EF1A869FCA006AEA75 /* AppAuthenticationManager.m in Sources */,
-				441009DA1A868317006AEA75 /* Record.m in Sources */,
-				E8E070801A85D92C00881F09 /* ViewController.m in Sources */,
+				E88BDCD81A874B2D00B1D56A /* AppAuthenticationManager.m in Sources */,
+				E8E070801A85D92C00881F09 /* SettingViewController.m in Sources */,
+				E88BDCE21A874B7300B1D56A /* Camera.m in Sources */,
 				E8E0707F1A85D92C00881F09 /* AppDelegate.m in Sources */,
+				E88BDCE41A874B7300B1D56A /* Record.m in Sources */,
+				E88BDCE31A874B7300B1D56A /* CameraViewObject.m in Sources */,
+				E88BDCE51A874B7300B1D56A /* User.m in Sources */,
 				E88BDCD01A8745BD00B1D56A /* LoginViewController.m in Sources */,
-				441009EC1A869C1E006AEA75 /* CameraViewObject.m in Sources */,
-				441009D11A867B1E006AEA75 /* Camera.m in Sources */,
+				E88BDCD71A874B2D00B1D56A /* AFAppDotNetAPIClient.m in Sources */,
+				E88BDCED1A874F5C00B1D56A /* MenuTableViewController.m in Sources */,
 				E8E0704D1A85C63C00881F09 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

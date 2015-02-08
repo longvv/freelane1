@@ -3,11 +3,11 @@
 //  svcamcloud-mobile
 //
 //  Created by vu van long on 2/7/15.
-//  Copyright (c) 2015 FreelancerTeam. All rights reserved.
+//  Copyright (c) 2015 LTTeam. All rights reserved.
 //
 
 #import "LoginViewController.h"
-#import "ViewController.h"
+#import "MenuTableViewController.h"
 #import "User.h"
 
 @interface LoginViewController ()
@@ -49,15 +49,13 @@
     NSString *email = self.txtEmail.text;
     NSString *password = self.txtPassword.text;
     [User loginWithUserEmail:email andPassword:password successBlock:^(User *loginUser, NSString *userToken) {
-        ViewController* controller = [mainStoryboard instantiateViewControllerWithIdentifier:@"ViewController"];
+        MenuTableViewController* controller = [mainStoryboard instantiateViewControllerWithIdentifier:@"MenuTableViewController"];
         [self.navigationController pushViewController:controller animated:YES];
         
     } errorBlock:^(NSError *error) {
     
         
     }];
-//    ViewController* controller = [mainStoryboard instantiateViewControllerWithIdentifier:@"ViewController"];
-//    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (IBAction)btnSettingPressed:(id)sender {
