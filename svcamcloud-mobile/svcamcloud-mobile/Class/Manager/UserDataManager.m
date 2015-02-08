@@ -19,10 +19,18 @@
 }
 + (NSString *) serverBaseUrl{
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-    return [userDefault objectForKey:@"server_base_url"];
+    NSString *url = [userDefault objectForKey:@"server_base_url"];
+    if(url == nil){
+        url = @"http://vcamcloud.com/";
+    }
+    return url;
 }
 +(NSString *) serverPort{
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-    return [userDefault objectForKey:@"server_port"];
+    NSString *port = [userDefault objectForKey:@"server_port"];
+    if(port == nil){
+        port = @"80";
+    }
+    return port;
 }
 @end
