@@ -36,8 +36,21 @@
 
 - (IBAction)btnRememberPressed:(id)sender {
     //  NSString *//
+    if (!self.isChecked) {
+        [self.btnRemember setImage:[UIImage imageNamed:@"ic_check"] forState:UIControlStateNormal];
+        self.isChecked = YES;
+    }else{
+        [self.btnRemember setImage:nil forState:UIControlStateNormal];
+        self.isChecked = NO;
+    }
+
+    if(self.isChecked){
+        [self.txtPort setText:@"443"];
+    }else{
+        [self.txtPort setText:@"80"];
+    }
     
-   }
+}
 
 - (IBAction)btnSavePressed:(id)sender {
     NSString *serverUrl = self.txtDomain.text;
