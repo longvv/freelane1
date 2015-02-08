@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		441009F21A87BB4A006AEA75 /* UserDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 441009F11A87BB4A006AEA75 /* UserDataManager.m */; };
 		E88BDCCF1A8745BD00B1D56A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCCC1A8745BD00B1D56A /* BaseViewController.m */; };
 		E88BDCD01A8745BD00B1D56A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCCE1A8745BD00B1D56A /* LoginViewController.m */; };
 		E88BDCD71A874B2D00B1D56A /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCD21A874B2D00B1D56A /* AFAppDotNetAPIClient.m */; };
@@ -50,6 +51,8 @@
 /* Begin PBXFileReference section */
 		08DF146D881B60CEDE927A22 /* Pods-svcamcloud-mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-svcamcloud-mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-svcamcloud-mobile/Pods-svcamcloud-mobile.release.xcconfig"; sourceTree = "<group>"; };
 		441009D31A867BC3006AEA75 /* CameraStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraStatus.h; sourceTree = "<group>"; };
+		441009F01A87BB4A006AEA75 /* UserDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataManager.h; sourceTree = "<group>"; };
+		441009F11A87BB4A006AEA75 /* UserDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataManager.m; sourceTree = "<group>"; };
 		DA1672C6B980360E94164D6B /* libPods-svcamcloud-mobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-svcamcloud-mobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37422592227F7C03A2B8226 /* Pods-svcamcloud-mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-svcamcloud-mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-svcamcloud-mobile/Pods-svcamcloud-mobile.debug.xcconfig"; sourceTree = "<group>"; };
 		E88BDCCB1A8745BD00B1D56A /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -267,6 +270,8 @@
 				E88BDCD41A874B2D00B1D56A /* AppAuthenticationManager.m */,
 				E88BDCD51A874B2D00B1D56A /* WebServiceManager.h */,
 				E88BDCD61A874B2D00B1D56A /* WebServiceManager.m */,
+				441009F01A87BB4A006AEA75 /* UserDataManager.h */,
+				441009F11A87BB4A006AEA75 /* UserDataManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -478,6 +483,7 @@
 				E88BDCEC1A874F5C00B1D56A /* CustomMenuCell.m in Sources */,
 				E88BDCF01A8758E400B1D56A /* MyRecordingViewController.m in Sources */,
 				E88BDCCF1A8745BD00B1D56A /* BaseViewController.m in Sources */,
+				441009F21A87BB4A006AEA75 /* UserDataManager.m in Sources */,
 				E88BDCD81A874B2D00B1D56A /* AppAuthenticationManager.m in Sources */,
 				E8E070801A85D92C00881F09 /* SettingViewController.m in Sources */,
 				E8E97E0D1A87B42600F34BDE /* LoginView.m in Sources */,

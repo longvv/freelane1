@@ -7,6 +7,7 @@
 //
 
 #import "WebServiceManager.h"
+#import "UserDataManager.h"
 
 @implementation WebServiceManager
 
@@ -15,7 +16,9 @@
 }
 
 + (NSString *) loginWebServicePath{
-    return @"http://vcamcloud.com/api/v1/login";
+    NSString *serviceBaseUrl = [self serviceBaseUrlString];
+    NSString *apiString = [NSString stringWithFormat:@"%@%@",serviceBaseUrl,@"/api/v1/login"];
+    return apiString;
 }
 
 +(NSString *)listRecordWebServicePath{
@@ -27,6 +30,9 @@
 }
 
 +(NSString *) serviceBaseUrlString{
-    return @"http://vcamcloud.com";
+    NSString *usrBaseUrl = [UserDataManager serverBaseUrl];
+    NSString *serverPort = [UserDataManager serverPort];
+    NSString *serverBaseUrlWithPort = [NSString stringWithFormat:@"%@:%@",usrBaseUrl,serverPort];
+    return serverBaseUrlWithPort;
 }
 @end
