@@ -27,9 +27,9 @@
 
 
 + (NSURLSessionDataTask *)loginWithUserEmail:(NSString *) userEmail andPassword:(NSString *) password successBlock:(void (^)(User *loginUser, NSString *userToken))successBlock errorBlock:(void (^)(NSError * error))errorBLock{
-//    NSDictionary *parameter =[NSDictionary dictionaryWithObjectsAndKeys:
-//                               userEmail, @"email", password, @"password", nil];
-    NSString *parameter = @"{\"email\":\"op@local.com\",\"password\":\"1\"}";
+    NSDictionary *parameter =[NSDictionary dictionaryWithObjectsAndKeys:
+                               userEmail, @"email", password, @"password", nil];
+//    NSString *parameter = @"{\"email\":\"op@local.com\",\"password\":\"1\"}";
     return [[AFAppDotNetAPIClient sharedClient] POST:[WebServiceManager loginWebServicePath] parameters:parameter  success:^(NSURLSessionDataTask * __unused task, id JSON) {
         NSDictionary *userDic = [JSON valueForKeyPath:@"user"];
         User *loginUsr = [[User alloc]initWithAttributes:userDic];

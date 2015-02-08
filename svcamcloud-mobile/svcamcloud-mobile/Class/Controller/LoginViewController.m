@@ -53,7 +53,6 @@
         [self.navigationController pushViewController:controller animated:YES];
         
     } errorBlock:^(NSError *error) {
-    
         
     }];
 }
