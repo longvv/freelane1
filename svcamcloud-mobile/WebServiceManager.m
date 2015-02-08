@@ -25,4 +25,8 @@
 +(NSString *) viewCameraWebServicePath{
     return nil;
 }
+
++(NSString *) serviceBaseUrlString{
+    return nil;
+}
 @end
