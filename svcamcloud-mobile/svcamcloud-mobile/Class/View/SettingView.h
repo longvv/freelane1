@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtPort;
 @property (weak, nonatomic) IBOutlet UIButton *btnRemember;
 @property (assign, nonatomic) id delegate;
+@property (assign, nonatomic) BOOL isChecked;
 
 - (IBAction)btnRememberPressed:(id)sender;
 - (IBAction)btnSavePressed:(id)sender;

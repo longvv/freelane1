@@ -49,4 +49,14 @@
     }
 }
 
+- (IBAction)btnRemeberPressed:(id)sender {
+    if (!self.isChecked) {
+        [self.btnRemember setImage:[UIImage imageNamed:@"ic_check"] forState:UIControlStateNormal];
+        self.isChecked = YES;
+    }else{
+        [self.btnRemember setImage:nil forState:UIControlStateNormal];
+        self.isChecked = NO;
+    }
+}
+
 @end

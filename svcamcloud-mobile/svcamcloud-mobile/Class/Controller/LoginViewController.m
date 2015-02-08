@@ -10,6 +10,7 @@
 #import "MenuTableViewController.h"
 #import "User.h"
 #import "AppAuthenticationManager.h"
+#import "SettingViewController.h"
 
 @interface LoginViewController ()
 
@@ -61,6 +62,8 @@
 
 #pragma mark - IBAction methods
 - (IBAction)btnSettingPressed:(id)sender {
+    SettingViewController* controller = [mainStoryboard instantiateViewControllerWithIdentifier:@"SettingViewController"];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 @end

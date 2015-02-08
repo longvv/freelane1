@@ -20,6 +20,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnRemember;
 @property (weak, nonatomic) IBOutlet UIButton *btnSignin;
 @property (assign, nonatomic) id delegate;
+@property (assign, nonatomic) BOOL isChecked;
 
 - (IBAction)btnSinginPressed:(id)sender;
+- (IBAction)btnRemeberPressed:(id)sender;
 @end

@@ -40,7 +40,7 @@
                                         <outlet property="delegate" destination="iN0-l3-epB" id="FS5-vg-wNO"/>
                                     </connections>
                                 </textField>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZF-9M-XcF">
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZF-9M-XcF">
                                     <rect key="frame" x="58" y="108" width="20" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="20" id="YjA-FH-dOm"/>
