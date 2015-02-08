@@ -8,6 +8,7 @@
 
 #import "SettingView.h"
 #import "UIView+Extend.h"
+#import "UserDataManager.h"
 
 @implementation SettingView
 
@@ -19,10 +20,14 @@
         self = [subviewArray objectAtIndex:0];
         self.frame = frame;
         [self prepareLayout];
+        [self loadSettingData];
     }
     return self;
 }
-
+- (void) loadSettingData{
+    [self.txtDomain setText:[UserDataManager serverBaseUrl]];
+    [self.txtPort setText:[UserDataManager serverPort]];
+}
 - (void)prepareLayout{
     [self.txtDomain setupViewBorder];
     [self.txtPort setupViewBorder];
@@ -30,13 +35,7 @@
 }
 
 - (IBAction)btnRememberPressed:(id)sender {
-    if (!self.isChecked) {
-        [self.btnRemember setImage:[UIImage imageNamed:@"ic_check"] forState:UIControlStateNormal];
-        self.isChecked = YES;
-    }else{
-        [self.btnRemember setImage:nil forState:UIControlStateNormal];
-        self.isChecked = NO;
-    }
+    //  NSString *//
 }
 
 - (IBAction)btnSavePressed:(id)sender {
