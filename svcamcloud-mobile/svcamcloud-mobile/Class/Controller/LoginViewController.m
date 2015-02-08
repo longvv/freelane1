@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "ViewController.h"
+#import "User.h"
 
 @interface LoginViewController ()
 
@@ -45,8 +46,18 @@
 
 #pragma mark - IBAction methods
 - (IBAction)btnSinginPressed:(id)sender {
-    ViewController* controller = [mainStoryboard instantiateViewControllerWithIdentifier:@"ViewController"];
-    [self.navigationController pushViewController:controller animated:YES];
+    NSString *email = self.txtEmail.text;
+    NSString *password = self.txtPassword.text;
+    [User loginWithUserEmail:email andPassword:password successBlock:^(User *loginUser, NSString *userToken) {
+        ViewController* controller = [mainStoryboard instantiateViewControllerWithIdentifier:@"ViewController"];
+        [self.navigationController pushViewController:controller animated:YES];
+        
+    } errorBlock:^(NSError *error) {
+    
+        
+    }];
+//    ViewController* controller = [mainStoryboard instantiateViewControllerWithIdentifier:@"ViewController"];
+//    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (IBAction)btnSettingPressed:(id)sender {

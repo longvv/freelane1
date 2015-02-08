@@ -15,7 +15,7 @@
 }
 
 + (NSString *) loginWebServicePath{
-    return nil;
+    return @"http://vcamcloud.com/api/v1/login";
 }
 
 +(NSString *)listRecordWebServicePath{
@@ -27,6 +27,6 @@
 }
 
 +(NSString *) serviceBaseUrlString{
-    return nil;
+    return @"http://vcamcloud.com";
 }
 @end
