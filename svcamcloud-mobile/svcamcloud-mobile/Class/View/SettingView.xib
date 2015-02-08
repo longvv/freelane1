@@ -35,7 +35,7 @@
                                         <constraint firstAttribute="height" constant="40" id="dzE-2p-HmJ"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                    <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     <connections>
                                         <outlet property="delegate" destination="iN0-l3-epB" id="FS5-vg-wNO"/>
                                     </connections>
@@ -54,7 +54,7 @@
                                     </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User secureed connection" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfM-ru-DrG">
-                                    <rect key="frame" x="83" y="107" width="207" height="21.5"/>
+                                    <rect key="frame" x="83" y="107" width="207" height="22"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="21.5" id="IrU-5J-LzG"/>
                                         <constraint firstAttribute="width" constant="207" id="qdk-pu-jbB"/>
