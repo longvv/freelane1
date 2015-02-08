@@ -7,7 +7,11 @@
 //
 
 #import "BaseViewController.h"
+#import "RecordTableViewCell.h"
 
-@interface MyRecordingViewController : BaseViewController
+@interface MyRecordingViewController : BaseViewController<UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UIView *MenuView;
+@property (weak, nonatomic) IBOutlet UIView *titleBarView;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

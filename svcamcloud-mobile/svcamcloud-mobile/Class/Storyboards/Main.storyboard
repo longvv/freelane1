@@ -12,6 +12,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="t1G-Jt-ysl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -128,13 +130,14 @@
                     </navigationItem>
                     <connections>
                         <outlet property="scrollView" destination="8c5-DL-EUx" id="Zkn-n8-6ww"/>
+                        <outlet property="scrollViewTopContraint" destination="EfW-sI-FBb" id="Zkz-eF-bCD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRa-ws-WwF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="466" y="-567"/>
         </scene>
-        <!--Menu Table View Controller-->
+        <!--MY CAMERA-->
         <scene sceneID="CDk-l9-adt">
             <objects>
                 <tableViewController storyboardIdentifier="MenuTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nVM-j9-Qir" customClass="MenuTableViewController" sceneMemberID="viewController">
@@ -161,7 +164,6 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="info" destination="cKU-cI-kHh" id="vQe-6I-bMb"/>
-                                    <segue destination="ZcS-Sg-ebR" kind="push" id="JqX-yS-b5B"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -170,7 +172,7 @@
                             <outlet property="delegate" destination="nVM-j9-Qir" id="C2C-LZ-XWj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="C1Y-WL-db4">
+                    <navigationItem key="navigationItem" title="MY CAMERA" id="C1Y-WL-db4">
                         <barButtonItem key="leftBarButtonItem" image="btn_menu" id="y4L-cz-Sxp">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -181,6 +183,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <segue destination="VNP-UO-LWE" kind="push" id="gx4-kG-Iad"/>
+                        <segue destination="ZcS-Sg-ebR" kind="push" id="8bS-VX-5kU"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4W-1W-OQN" userLabel="First Responder" sceneMemberID="firstResponder"/>

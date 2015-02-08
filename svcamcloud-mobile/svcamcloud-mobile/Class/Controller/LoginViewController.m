@@ -63,6 +63,7 @@
 #pragma mark - IBAction methods
 - (IBAction)btnSettingPressed:(id)sender {
     SettingViewController* controller = [mainStoryboard instantiateViewControllerWithIdentifier:@"SettingViewController"];
+    controller.scrollViewTopContraint.constant = 75;
     [self.navigationController pushViewController:controller animated:YES];
 }
 

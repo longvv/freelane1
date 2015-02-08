@@ -39,8 +39,7 @@
     self.screenWidth = screenRect.size.width;
     self.screenHeight = screenRect.size.height;
     
-    self.view.frame = CGRectMake(-(self.view.frame.size.width * 0.8), 0, self.view.frame.size.width * 0.8, self.view.frame.size.height);
-
+    self.view.frame = CGRectMake(-(self.screenWidth * 0.8), 0, (self.screenWidth * 0.8) + self.screenWidth, self.screenHeight);
     // instantiate the controllers 
     [self instantiateControllers];
 }
@@ -81,13 +80,16 @@
     self.navigationItem.rightBarButtonItem = nil;
     switch (indexPath.row) {
         case 0:
+            [self initMyCameraViewController];
             break;
         case 1:
+            [self initMyRecordingViewController];
             break;
         case 2:
             [self initSettingViewController];
             break;
         case 3:
+            [self singOut];
             break;
         default:
             break;
@@ -102,9 +104,12 @@
     self.myCameraViewController.view.tag = 999;
     self.myCameraViewController = [myCameraStoryboard
                                instantiateViewControllerWithIdentifier:@"MyCameraViewController"];
-    [self.view addSubview:self.myCameraViewController.view];
     self.myCameraViewController.view.frame = CGRectMake((self.screenWidth * 0.8), 0, self.screenWidth, self.screenHeight);
-    self.view.frame = CGRectMake(-(self.screenWidth * 0.8), 0, (self.screenWidth * 0.8) + self.screenWidth, self.screenHeight);
+    [self.navigationController.navigationBar.topItem setTitle:@"My Camera"];
+    [self.view addSubview:self.myCameraViewController.view];
+    [UIView animateWithDuration:0.5f animations:^{
+        self.view.frame = CGRectMake(-(self.screenWidth * 0.8), 0, (self.screenWidth * 0.8) + self.screenWidth, self.screenHeight);
+    }];
 
     
     // my record
@@ -121,9 +126,13 @@
 
 - (void)initSettingViewController {
     // load todo view controller
+    [self.navigationController.navigationBar.topItem setTitle:@"Setting"];
     self.settingViewController.view.tag = 999;
     self.settingViewController.view.frame = CGRectMake((self.screenWidth * 0.8), 0, self.screenWidth, self.screenHeight);
     [self.view addSubview:self.settingViewController.view];
+    self.settingViewController.scrollViewTopContraint.constant = 10;
+    [self.settingViewController.view layoutIfNeeded];
+    
     [UIView animateWithDuration:0.5f animations:^{
         self.view.frame = CGRectMake(-(self.screenWidth * 0.8), 0, (self.screenWidth * 0.8) + self.screenWidth, self.screenHeight);
     }];
@@ -131,12 +140,28 @@
 
 - (void)initMyCameraViewController {
     // load todo view controller
+    [self.navigationController.navigationBar.topItem setTitle:@"My Camera"];
     self.myCameraViewController.view.tag = 999;
     self.myCameraViewController.view.frame = CGRectMake((self.screenWidth * 0.8), 0, self.screenWidth, self.screenHeight);
     [self.view addSubview:self.myCameraViewController.view];
     [UIView animateWithDuration:0.5f animations:^{
         self.view.frame = CGRectMake(-(self.screenWidth * 0.8), 0, (self.screenWidth * 0.8) + self.screenWidth, self.screenHeight);
     }];
+}
+
+- (void)initMyRecordingViewController {
+    // load todo view controller
+    [self.navigationController.navigationBar.topItem setTitle:@"My Recording"];
+    self.myRecordingViewController.view.tag = 999;
+    self.myRecordingViewController.view.frame = CGRectMake((self.screenWidth * 0.8), 0, self.screenWidth, self.screenHeight);
+    [self.view addSubview:self.myRecordingViewController.view];
+    [UIView animateWithDuration:0.5f animations:^{
+        self.view.frame = CGRectMake(-(self.screenWidth * 0.8), 0, (self.screenWidth * 0.8) + self.screenWidth, self.screenHeight);
+    }];
+}
+
+- (void)singOut{
+    
 }
 
 - (void)removeSubviews {

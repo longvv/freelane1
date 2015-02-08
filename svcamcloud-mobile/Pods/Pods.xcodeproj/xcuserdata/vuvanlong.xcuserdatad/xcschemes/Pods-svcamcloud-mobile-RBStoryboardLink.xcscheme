@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "184D19B012024970B4925203"
+               BlueprintIdentifier = "72716044048E1AE30F8423E8"
                BuildableName = "libPods-svcamcloud-mobile-RBStoryboardLink.a"
                BlueprintName = "Pods-svcamcloud-mobile-RBStoryboardLink"
                ReferencedContainer = "container:Pods.xcodeproj">

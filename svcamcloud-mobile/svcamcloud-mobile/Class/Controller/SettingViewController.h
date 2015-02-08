@@ -13,6 +13,7 @@
 @interface SettingViewController : BaseViewController
 
 @property (weak, nonatomic) IBOutlet TPKeyboardAvoidingScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *scrollViewTopContraint;
 @property (strong, nonatomic) SettingView* settingView;
 
 - (IBAction)btnBackPressed:(id)sender;
