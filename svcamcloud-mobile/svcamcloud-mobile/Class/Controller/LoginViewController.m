@@ -3,11 +3,11 @@
 //  svcamcloud-mobile
 //
 //  Created by vu van long on 2/7/15.
-//  Copyright (c) 2015 FreelancerTeam. All rights reserved.
+//  Copyright (c) 2015 LTTeam. All rights reserved.
 //
 
 #import "LoginViewController.h"
-#import "ViewController.h"
+#import "MenuTableViewController.h"
 
 @interface LoginViewController ()
 
@@ -45,7 +45,7 @@
 
 #pragma mark - IBAction methods
 - (IBAction)btnSinginPressed:(id)sender {
-    ViewController* controller = [mainStoryboard instantiateViewControllerWithIdentifier:@"ViewController"];
+    MenuTableViewController* controller = [mainStoryboard instantiateViewControllerWithIdentifier:@"MenuTableViewController"];
     [self.navigationController pushViewController:controller animated:YES];
 }
 

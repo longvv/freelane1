@@ -169,17 +169,17 @@
                         <outlet property="btnSignin" destination="tq9-bS-s3p" id="QYB-aW-h2a"/>
                         <outlet property="txtEmail" destination="ElH-Tw-wIC" id="koH-fD-BpH"/>
                         <outlet property="txtPassword" destination="2Dm-hu-L6T" id="LzV-6G-32X"/>
-                        <segue destination="ZcS-Sg-ebR" kind="push" id="tSY-Yk-vVY"/>
+                        <segue destination="nVM-j9-Qir" kind="push" id="7Au-AG-UB6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="No6-AZ-Ob3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-607" y="63"/>
         </scene>
-        <!--View Controller-->
+        <!--Setting View Controller-->
         <scene sceneID="H0N-aG-UPN">
             <objects>
-                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZcS-Sg-ebR" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZcS-Sg-ebR" customClass="SettingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pCc-eG-w7X"/>
                         <viewControllerLayoutGuide type="bottom" id="Vti-lI-f6b"/>
@@ -190,17 +190,105 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="14i-0W-mHs">
-                        <barButtonItem key="leftBarButtonItem" image="btn_menu" id="Sgl-Pw-NaE">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="cL2-29-bJQ">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CnG-Oc-sfN">
+                                <rect key="frame" x="16" y="7" width="78" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Setting" image="btn_back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <connections>
+                                <action selector="btnBackPressed:" destination="ZcS-Sg-ebR" id="QP5-gl-Qz4"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dRa-ws-WwF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-554" y="-607"/>
+            <point key="canvasLocation" x="466" y="-567"/>
+        </scene>
+        <!--Menu Table View Controller-->
+        <scene sceneID="CDk-l9-adt">
+            <objects>
+                <tableViewController storyboardIdentifier="MenuTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nVM-j9-Qir" customClass="MenuTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ivL-Le-lAa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuCell" id="w7d-T7-rbh" customClass="CustomMenuCell">
+                                <rect key="frame" x="0.0" y="119" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w7d-T7-rbh" id="64S-B6-Zbp">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Menu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKU-cI-kHh">
+                                            <rect key="frame" x="59" y="11" width="253" height="24"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="info" destination="cKU-cI-kHh" id="vQe-6I-bMb"/>
+                                    <segue destination="ZcS-Sg-ebR" kind="push" id="JqX-yS-b5B"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nVM-j9-Qir" id="xYV-tV-55Y"/>
+                            <outlet property="delegate" destination="nVM-j9-Qir" id="C2C-LZ-XWj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="C1Y-WL-db4">
+                        <barButtonItem key="leftBarButtonItem" image="btn_menu" id="y4L-cz-Sxp">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="showMenu:" destination="nVM-j9-Qir" id="3h6-v6-YnB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <segue destination="VNP-UO-LWE" kind="push" id="gx4-kG-Iad"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4W-1W-OQN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-76" y="63"/>
+        </scene>
+        <!--Storyboard Link-->
+        <scene sceneID="N3c-f3-ltK">
+            <objects>
+                <viewController id="VNP-UO-LWE" customClass="RBStoryboardLink" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Syd-tN-jgd"/>
+                        <viewControllerLayoutGuide type="bottom" id="NfU-wi-hiu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9MP-PW-SRT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="y2E-1l-c26"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="storyboardName" value="MyCameraStoryboard"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="sceneIdentifier" value="MyCameraViewController"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXa-yt-zNd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="466" y="63"/>
         </scene>
     </scenes>
     <resources>
+        <image name="btn_back" width="20" height="20"/>
         <image name="btn_menu" width="30" height="30"/>
         <image name="btn_setting" width="20" height="20"/>
     </resources>
