@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "MenuTableViewController.h"
 #import "User.h"
+#import "AppAuthenticationManager.h"
 
 @interface LoginViewController ()
 
@@ -49,6 +50,8 @@
     NSString *email = self.txtEmail.text;
     NSString *password = self.txtPassword.text;
     [User loginWithUserEmail:email andPassword:password successBlock:^(User *loginUser, NSString *userToken) {
+        [AppAuthenticationManager saveLogginUser:loginUser];
+        [AppAuthenticationManager saveSessionKey:userToken];
         MenuTableViewController* controller = [mainStoryboard instantiateViewControllerWithIdentifier:@"MenuTableViewController"];
         [self.navigationController pushViewController:controller animated:YES];
         

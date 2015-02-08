@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "User.h"
 
 @interface AppAuthenticationManager : NSObject
 
 +(NSString*) sessionKeyString;
-
++ (User *) logginUser;
++ (void) saveLogginUser:(User *) logginUser;
++ (void) saveSessionKey:(NSString *) sessionkey;
 @end

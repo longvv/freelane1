@@ -25,7 +25,6 @@
     return self;
 }
 
-
 + (NSURLSessionDataTask *)loginWithUserEmail:(NSString *) userEmail andPassword:(NSString *) password successBlock:(void (^)(User *loginUser, NSString *userToken))successBlock errorBlock:(void (^)(NSError * error))errorBLock{
     NSDictionary *parameter =[NSDictionary dictionaryWithObjectsAndKeys:
                                userEmail, @"email", password, @"password", nil];
