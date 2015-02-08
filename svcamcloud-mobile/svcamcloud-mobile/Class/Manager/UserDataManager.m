@@ -21,7 +21,7 @@
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     NSString *url = [userDefault objectForKey:@"server_base_url"];
     if(url == nil){
-        url = @"http://vcamcloud.com/";
+        url = @"http://vcamcloud.com";
     }
     return url;
 }
