@@ -1,5 +1,5 @@
 #include "Pods-svcamcloud-mobile-AFNetworking.xcconfig"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/AFNetworking" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/RBStoryboardLink"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/AFNetworking" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/RBStoryboardLink" "${PODS_ROOT}/Headers/Public/TPKeyboardAvoiding"
 OTHER_LDFLAGS = ${PODS_SVCAMCLOUD_MOBILE_AFNETWORKING_OTHER_LDFLAGS} -ObjC
 PODS_ROOT = ${SRCROOT}

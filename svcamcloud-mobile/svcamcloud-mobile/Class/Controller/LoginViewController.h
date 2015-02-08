@@ -8,15 +8,15 @@
 
 #import "BaseViewController.h"
 #import "AppDelegate.h"
+#import "LoginView.h"
+#import <TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h>
 
-@interface LoginViewController : BaseViewController<UITextFieldDelegate>
+@interface LoginViewController : BaseViewController<LoginDelegate>
 
-@property (weak, nonatomic) IBOutlet UITextField *txtEmail;
-@property (weak, nonatomic) IBOutlet UITextField *txtPassword;
-@property (weak, nonatomic) IBOutlet UIButton *btnRemember;
-@property (weak, nonatomic) IBOutlet UIButton *btnSignin;
+@property (weak, nonatomic) IBOutlet TPKeyboardAvoidingScrollView *scrollView;
+@property (nonatomic, strong) LoginView* loginView;
 
-- (IBAction)btnSinginPressed:(id)sender;
+
 - (IBAction)btnSettingPressed:(id)sender;
 @end
 
