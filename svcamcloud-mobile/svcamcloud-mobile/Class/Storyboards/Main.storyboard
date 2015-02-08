@@ -159,6 +159,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="btn_setting" id="s7U-Bc-qGS">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="btnSettingPressed:" destination="QfC-Ug-PfX" id="nB2-dy-F4s"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -199,6 +202,6 @@
     </scenes>
     <resources>
         <image name="btn_menu" width="30" height="30"/>
-        <image name="btn_setting" width="30" height="30"/>
+        <image name="btn_setting" width="20" height="20"/>
     </resources>
 </document>

@@ -49,4 +49,7 @@
     [self.navigationController pushViewController:controller animated:YES];
 }
 
+- (IBAction)btnSettingPressed:(id)sender {
+}
+
 @end

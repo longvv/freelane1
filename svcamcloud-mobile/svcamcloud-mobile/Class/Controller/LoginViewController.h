@@ -17,5 +17,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnSignin;
 
 - (IBAction)btnSinginPressed:(id)sender;
+- (IBAction)btnSettingPressed:(id)sender;
 @end
 
