@@ -15,4 +15,5 @@
 +(NSString *) loginWebServicePath;
 +(NSString *) listRecordWebServicePath;
 +(NSString *) viewCameraWebServicePath;
++(NSString *) serviceBaseUrlString;
 @end

@@ -21,8 +21,9 @@
 // THE SOFTWARE.
 
 #import "AFAppDotNetAPIClient.h"
+#import "WebServiceManager.h"
 
-static NSString * const AFAppDotNetAPIBaseURLString = @"https://api.app.net/";
+//static NSString * const AFAppDotNetAPIBaseURLString = @"https://api.app.net/";
 
 @implementation AFAppDotNetAPIClient
 
@@ -30,7 +31,7 @@ static NSString * const AFAppDotNetAPIBaseURLString = @"https://api.app.net/";
     static AFAppDotNetAPIClient *_sharedClient = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedClient = [[AFAppDotNetAPIClient alloc] initWithBaseURL:[NSURL URLWithString:AFAppDotNetAPIBaseURLString]];
+        _sharedClient = [[AFAppDotNetAPIClient alloc] initWithBaseURL:[NSURL URLWithString:[WebServiceManager serviceBaseUrlString]]];
         _sharedClient.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
     });
 

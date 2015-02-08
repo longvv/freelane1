@@ -8,6 +8,7 @@
 
 #import "Record.h"
 #import "WebServiceManager.h"
+#import "AppAuthenticationManager.h"
 
 @interface Record()
 
