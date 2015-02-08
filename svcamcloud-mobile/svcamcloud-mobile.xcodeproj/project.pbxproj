@@ -14,6 +14,8 @@
 		441009DD1A86860D006AEA75 /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 441009DC1A86860D006AEA75 /* AFAppDotNetAPIClient.m */; };
 		441009EC1A869C1E006AEA75 /* CameraViewObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 441009EB1A869C1E006AEA75 /* CameraViewObject.m */; };
 		441009EF1A869FCA006AEA75 /* AppAuthenticationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 441009EE1A869FCA006AEA75 /* AppAuthenticationManager.m */; };
+		E88BDCCF1A8745BD00B1D56A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCCC1A8745BD00B1D56A /* BaseViewController.m */; };
+		E88BDCD01A8745BD00B1D56A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCCE1A8745BD00B1D56A /* LoginViewController.m */; };
 		E8E0704D1A85C63C00881F09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E0704C1A85C63C00881F09 /* main.m */; };
 		E8E070581A85C63C00881F09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E070571A85C63C00881F09 /* Images.xcassets */; };
 		E8E070671A85C63C00881F09 /* svcamcloud_mobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E070661A85C63C00881F09 /* svcamcloud_mobileTests.m */; };
@@ -53,6 +55,10 @@
 		441009EE1A869FCA006AEA75 /* AppAuthenticationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppAuthenticationManager.m; sourceTree = SOURCE_ROOT; };
 		DA1672C6B980360E94164D6B /* libPods-svcamcloud-mobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-svcamcloud-mobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37422592227F7C03A2B8226 /* Pods-svcamcloud-mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-svcamcloud-mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-svcamcloud-mobile/Pods-svcamcloud-mobile.debug.xcconfig"; sourceTree = "<group>"; };
+		E88BDCCB1A8745BD00B1D56A /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		E88BDCCC1A8745BD00B1D56A /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		E88BDCCD1A8745BD00B1D56A /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		E88BDCCE1A8745BD00B1D56A /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		E8E070471A85C63C00881F09 /* svcamcloud-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "svcamcloud-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8E0704B1A85C63C00881F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8E0704C1A85C63C00881F09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -196,6 +202,10 @@
 		E8E070741A85D92C00881F09 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E88BDCCB1A8745BD00B1D56A /* BaseViewController.h */,
+				E88BDCCC1A8745BD00B1D56A /* BaseViewController.m */,
+				E88BDCCD1A8745BD00B1D56A /* LoginViewController.h */,
+				E88BDCCE1A8745BD00B1D56A /* LoginViewController.m */,
 				E8E070751A85D92C00881F09 /* ViewController.h */,
 				E8E070761A85D92C00881F09 /* ViewController.m */,
 			);
@@ -397,11 +407,13 @@
 			files = (
 				441009DD1A86860D006AEA75 /* AFAppDotNetAPIClient.m in Sources */,
 				441009CE1A867A50006AEA75 /* User.m in Sources */,
+				E88BDCCF1A8745BD00B1D56A /* BaseViewController.m in Sources */,
 				441009CB1A86772C006AEA75 /* WebServiceManager.m in Sources */,
 				441009EF1A869FCA006AEA75 /* AppAuthenticationManager.m in Sources */,
 				441009DA1A868317006AEA75 /* Record.m in Sources */,
 				E8E070801A85D92C00881F09 /* ViewController.m in Sources */,
 				E8E0707F1A85D92C00881F09 /* AppDelegate.m in Sources */,
+				E88BDCD01A8745BD00B1D56A /* LoginViewController.m in Sources */,
 				441009EC1A869C1E006AEA75 /* CameraViewObject.m in Sources */,
 				441009D11A867B1E006AEA75 /* Camera.m in Sources */,
 				E8E0704D1A85C63C00881F09 /* main.m in Sources */,

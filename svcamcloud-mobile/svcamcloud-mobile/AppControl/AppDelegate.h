@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define mainStoryboard [UIStoryboard storyboardWithName:@"Main" bundle:nil]
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
