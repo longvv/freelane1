@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "MenuTableViewController.h"
 #import "User.h"
+#import "AppAuthenticationManager.h"
 
 @interface LoginViewController ()
 

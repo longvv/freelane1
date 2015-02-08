@@ -7,10 +7,24 @@
 //
 
 #import "AppAuthenticationManager.h"
+#import "AppDelegate.h"
 
 @implementation AppAuthenticationManager
 + (NSString *) sessionKeyString{
-    return nil;
+    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    return appDelegate.sessionKey;
 }
 
++ (User *) logginUser{
+    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    return appDelegate.loginUser;
+}
++ (void) saveLogginUser:(User *)logginUser{
+    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    appDelegate.loginUser = logginUser;
+}
++ (void) saveSessionKey:(NSString *)sessionkey{
+    AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    appDelegate.sessionKey = sessionkey;
+}
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "User.h"
 
 #define mainStoryboard [UIStoryboard storyboardWithName:@"Main" bundle:nil]
 #define myCameraStoryboard [UIStoryboard storyboardWithName:@"MyCameraStoryboard" bundle:nil]
@@ -15,6 +16,8 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) NSString *sessionKey;
+@property (strong, nonatomic) User *loginUser;
 
 
 @end
