@@ -7,8 +7,13 @@
 //
 
 #import "BaseViewController.h"
+#import "SettingView.h"
+#import <TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h>
 
 @interface SettingViewController : BaseViewController
+
+@property (weak, nonatomic) IBOutlet TPKeyboardAvoidingScrollView *scrollView;
+@property (strong, nonatomic) SettingView* settingView;
 
 - (IBAction)btnBackPressed:(id)sender;
 

@@ -18,9 +18,29 @@
     [super viewDidLoad];
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [self prepareLayout];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    if ([self.settingView.txtDomain isEditing] || [self.settingView.txtPort isEditing]) {
+        [self.settingView endEditing:YES];
+    }
+}
+
+#pragma mark - Business methods
+- (void)prepareLayout{
+    if (!self.settingView) {
+        self.settingView = [[SettingView alloc] initWithFrame:self.scrollView.bounds];
+        self.settingView.delegate = self;
+        [self.scrollView addSubview:self.settingView];
+    }
 }
 
 - (IBAction)btnBackPressed:(id)sender {

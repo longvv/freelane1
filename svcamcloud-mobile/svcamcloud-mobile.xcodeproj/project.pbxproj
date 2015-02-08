@@ -32,6 +32,8 @@
 		E8E97E0D1A87B42600F34BDE /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E97E0C1A87B42600F34BDE /* LoginView.m */; };
 		E8E97E0F1A87B43700F34BDE /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E97E0E1A87B43700F34BDE /* LoginView.xib */; };
 		E8E97E131A87B76A00F34BDE /* UIView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E97E121A87B76A00F34BDE /* UIView+Extend.m */; };
+		E8E97E161A87BF3D00F34BDE /* SettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E97E151A87BF3D00F34BDE /* SettingView.m */; };
+		E8E97E181A87BF5F00F34BDE /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E97E171A87BF5F00F34BDE /* SettingView.xib */; };
 		ED2DD2A6DB78429A81CE4D8B /* libPods-svcamcloud-mobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1672C6B980360E94164D6B /* libPods-svcamcloud-mobile.a */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +98,9 @@
 		E8E97E0E1A87B43700F34BDE /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		E8E97E111A87B76A00F34BDE /* UIView+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extend.h"; sourceTree = "<group>"; };
 		E8E97E121A87B76A00F34BDE /* UIView+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extend.m"; sourceTree = "<group>"; };
+		E8E97E141A87BF3D00F34BDE /* SettingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingView.h; sourceTree = "<group>"; };
+		E8E97E151A87BF3D00F34BDE /* SettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingView.m; sourceTree = "<group>"; };
+		E8E97E171A87BF5F00F34BDE /* SettingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +310,9 @@
 				E8E97E0B1A87B42600F34BDE /* LoginView.h */,
 				E8E97E0C1A87B42600F34BDE /* LoginView.m */,
 				E8E97E0E1A87B43700F34BDE /* LoginView.xib */,
+				E8E97E141A87BF3D00F34BDE /* SettingView.h */,
+				E8E97E151A87BF3D00F34BDE /* SettingView.m */,
+				E8E97E171A87BF5F00F34BDE /* SettingView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -408,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E88BDCF51A87590900B1D56A /* MyCameraStoryboard.storyboard in Resources */,
+				E8E97E181A87BF5F00F34BDE /* SettingView.xib in Resources */,
 				E8E070821A85D92C00881F09 /* Main.storyboard in Resources */,
 				E8E97E0F1A87B43700F34BDE /* LoginView.xib in Resources */,
 				E8E070811A85D92C00881F09 /* LaunchScreen.xib in Resources */,
@@ -465,6 +474,7 @@
 			files = (
 				E88BDCD91A874B2D00B1D56A /* WebServiceManager.m in Sources */,
 				E88BDCF31A8758F800B1D56A /* MyCameraViewController.m in Sources */,
+				E8E97E161A87BF3D00F34BDE /* SettingView.m in Sources */,
 				E88BDCEC1A874F5C00B1D56A /* CustomMenuCell.m in Sources */,
 				E88BDCF01A8758E400B1D56A /* MyRecordingViewController.m in Sources */,
 				E88BDCCF1A8745BD00B1D56A /* BaseViewController.m in Sources */,
