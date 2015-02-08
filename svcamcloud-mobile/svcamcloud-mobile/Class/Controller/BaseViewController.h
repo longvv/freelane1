@@ -11,6 +11,5 @@
 
 @interface BaseViewController : UIViewController
 @property (strong, nonatomic) UIView* overlayView;
-- (void)setupViewBorder:(UIView*)view;
 - (void)showSideMenu;
 @end

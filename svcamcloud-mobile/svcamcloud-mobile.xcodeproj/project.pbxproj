@@ -29,6 +29,9 @@
 		E8E070801A85D92C00881F09 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E070761A85D92C00881F09 /* SettingViewController.m */; };
 		E8E070811A85D92C00881F09 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E0707B1A85D92C00881F09 /* LaunchScreen.xib */; };
 		E8E070821A85D92C00881F09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E0707C1A85D92C00881F09 /* Main.storyboard */; };
+		E8E97E0D1A87B42600F34BDE /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E97E0C1A87B42600F34BDE /* LoginView.m */; };
+		E8E97E0F1A87B43700F34BDE /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E97E0E1A87B43700F34BDE /* LoginView.xib */; };
+		E8E97E131A87B76A00F34BDE /* UIView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E97E121A87B76A00F34BDE /* UIView+Extend.m */; };
 		ED2DD2A6DB78429A81CE4D8B /* libPods-svcamcloud-mobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1672C6B980360E94164D6B /* libPods-svcamcloud-mobile.a */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +91,11 @@
 		E8E070761A85D92C00881F09 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		E8E0707B1A85D92C00881F09 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		E8E0707C1A85D92C00881F09 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E8E97E0B1A87B42600F34BDE /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		E8E97E0C1A87B42600F34BDE /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		E8E97E0E1A87B43700F34BDE /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		E8E97E111A87B76A00F34BDE /* UIView+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extend.h"; sourceTree = "<group>"; };
+		E8E97E121A87B76A00F34BDE /* UIView+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extend.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +223,7 @@
 		E8E070731A85D92C00881F09 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				E8E97E101A87B72200F34BDE /* Utils */,
 				441009D21A867BA5006AEA75 /* Enums */,
 				E8E070741A85D92C00881F09 /* Controller */,
 				E8E070771A85D92C00881F09 /* Manager */,
@@ -293,6 +302,9 @@
 		E8E0707D1A85D92C00881F09 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E8E97E0B1A87B42600F34BDE /* LoginView.h */,
+				E8E97E0C1A87B42600F34BDE /* LoginView.m */,
+				E8E97E0E1A87B43700F34BDE /* LoginView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,6 +314,15 @@
 			children = (
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		E8E97E101A87B72200F34BDE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E8E97E111A87B76A00F34BDE /* UIView+Extend.h */,
+				E8E97E121A87B76A00F34BDE /* UIView+Extend.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,6 +409,7 @@
 			files = (
 				E88BDCF51A87590900B1D56A /* MyCameraStoryboard.storyboard in Resources */,
 				E8E070821A85D92C00881F09 /* Main.storyboard in Resources */,
+				E8E97E0F1A87B43700F34BDE /* LoginView.xib in Resources */,
 				E8E070811A85D92C00881F09 /* LaunchScreen.xib in Resources */,
 				E88BDCF71A876AC700B1D56A /* MyRecordingStoryboard.storyboard in Resources */,
 				E8E070581A85C63C00881F09 /* Images.xcassets in Resources */,
@@ -448,8 +470,10 @@
 				E88BDCCF1A8745BD00B1D56A /* BaseViewController.m in Sources */,
 				E88BDCD81A874B2D00B1D56A /* AppAuthenticationManager.m in Sources */,
 				E8E070801A85D92C00881F09 /* SettingViewController.m in Sources */,
+				E8E97E0D1A87B42600F34BDE /* LoginView.m in Sources */,
 				E88BDCE21A874B7300B1D56A /* Camera.m in Sources */,
 				E8E0707F1A85D92C00881F09 /* AppDelegate.m in Sources */,
+				E8E97E131A87B76A00F34BDE /* UIView+Extend.m in Sources */,
 				E88BDCE41A874B7300B1D56A /* Record.m in Sources */,
 				E88BDCE31A874B7300B1D56A /* CameraViewObject.m in Sources */,
 				E88BDCE51A874B7300B1D56A /* User.m in Sources */,

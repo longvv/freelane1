@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-svcamcloud-mobile-TPKeyboardAvoiding.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-svcamcloud-mobile.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>245A8405F12AFF1CA8C56BAE</key>
+		<key>184D19B012024970B4925203</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>35FE21CE8E29D9AC002FD017</key>
+		<key>1904254F84A255895CCA1FE2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C18A13D8A4E4E37B60E68A7E</key>
+		<key>2BF8086BBE93421115D13D73</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A9A31B26A9A7AD880BC6AFFC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

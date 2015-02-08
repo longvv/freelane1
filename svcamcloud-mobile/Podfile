@@ -7,7 +7,7 @@ target 'svcamcloud-mobile' do
 
 pod 'RBStoryboardLink', '~> 0.1'
 pod 'AFNetworking', '~> 2.5'
-
+pod 'TPKeyboardAvoiding', '~> 1.2'
 end
 
 target 'svcamcloud-mobileTests' do

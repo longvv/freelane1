@@ -18,6 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
     [self prepareLayout];
 }
 
@@ -26,38 +31,34 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - TextField delegate
-- (BOOL)textFieldShouldReturn:(UITextField *)textField{
-    [textField becomeFirstResponder];
-    if ([textField isEqual:self.txtEmail]) {
-        [self.txtPassword resignFirstResponder];
-    }else{
-        [self btnSinginPressed:nil];
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    if ([self.loginView.txtEmail isEditing] || [self.loginView.txtPassword isEditing]) {
+        [self.loginView endEditing:YES];
     }
-    return YES;
 }
 
-#pragma mark - Business methods
-- (void)prepareLayout{
-    [self setupViewBorder:self.txtPassword];
-    [self setupViewBorder:self.txtEmail];
-    [self setupViewBorder:self.btnRemember];
-}
-
-#pragma mark - IBAction methods
-- (IBAction)btnSinginPressed:(id)sender {
-    NSString *email = self.txtEmail.text;
-    NSString *password = self.txtPassword.text;
-    [User loginWithUserEmail:email andPassword:password successBlock:^(User *loginUser, NSString *userToken) {
+#pragma mark - LoginDelegate
+- (void)loginUser:(NSString *)email password:(NSString *)pass{
+    [User loginWithUserEmail:email andPassword:pass successBlock:^(User *loginUser, NSString *userToken) {
         MenuTableViewController* controller = [mainStoryboard instantiateViewControllerWithIdentifier:@"MenuTableViewController"];
         [self.navigationController pushViewController:controller animated:YES];
         
     } errorBlock:^(NSError *error) {
-    
+        
         
     }];
 }
 
+#pragma mark - Business methods
+- (void)prepareLayout{
+    if (!self.loginView) {
+        self.loginView = [[LoginView alloc] initWithFrame:self.scrollView.bounds];
+        self.loginView.delegate = self;
+        [self.scrollView addSubview:self.loginView];
+    }
+}
+
+#pragma mark - IBAction methods
 - (IBAction)btnSettingPressed:(id)sender {
 }
 

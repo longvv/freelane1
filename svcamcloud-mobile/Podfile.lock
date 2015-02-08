@@ -21,13 +21,16 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - RBStoryboardLink (0.1.0)
+  - TPKeyboardAvoiding (1.2.6)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5)
   - RBStoryboardLink (~> 0.1)
+  - TPKeyboardAvoiding (~> 1.2)
 
 SPEC CHECKSUMS:
   AFNetworking: 0f54cb5d16ce38c1b76948faffb8d5fb705021c7
   RBStoryboardLink: 2abe4697a7dd6137482590b044f6e4f1c2b05837
+  TPKeyboardAvoiding: 0797ad5f2366e2435e605202b01f3b7cff5d82cd
 
 COCOAPODS: 0.34.4
