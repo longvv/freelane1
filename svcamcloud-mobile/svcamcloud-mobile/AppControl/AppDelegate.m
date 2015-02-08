@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "AFAppDotNetAPIClient.h"
 
 @interface AppDelegate ()
 
