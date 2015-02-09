@@ -9,6 +9,7 @@
 #import "BaseViewController.h"
 #import "RecordTableViewCell.h"
 #import "CameraListViewController.h"
+#import "CalendarViewController.h"
 
 @interface MyRecordingViewController : BaseViewController<UITableViewDataSource, UITableViewDelegate, CameraListDelegate>
 @property (weak, nonatomic) IBOutlet UIView *MenuView;

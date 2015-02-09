@@ -25,6 +25,7 @@
 		E88BDCF71A876AC700B1D56A /* MyRecordingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88BDCF61A876AC700B1D56A /* MyRecordingStoryboard.storyboard */; };
 		E8BABAA61A890EF200051BCA /* RecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BABAA51A890EF200051BCA /* RecordTableViewCell.m */; };
 		E8BABBF91A891CE800051BCA /* CameraListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BABBF81A891CE800051BCA /* CameraListViewController.m */; };
+		E8BABBFC1A89237D00051BCA /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BABBFB1A89237D00051BCA /* CalendarViewController.m */; };
 		E8E0704D1A85C63C00881F09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E0704C1A85C63C00881F09 /* main.m */; };
 		E8E070581A85C63C00881F09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E070571A85C63C00881F09 /* Images.xcassets */; };
 		E8E070671A85C63C00881F09 /* svcamcloud_mobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E070661A85C63C00881F09 /* svcamcloud_mobileTests.m */; };
@@ -89,6 +90,8 @@
 		E8BABAA51A890EF200051BCA /* RecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordTableViewCell.m; sourceTree = "<group>"; };
 		E8BABBF71A891CE800051BCA /* CameraListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraListViewController.h; sourceTree = "<group>"; };
 		E8BABBF81A891CE800051BCA /* CameraListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraListViewController.m; sourceTree = "<group>"; };
+		E8BABBFA1A89237D00051BCA /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		E8BABBFB1A89237D00051BCA /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
 		E8E070471A85C63C00881F09 /* svcamcloud-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "svcamcloud-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8E0704B1A85C63C00881F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8E0704C1A85C63C00881F09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -265,6 +268,8 @@
 				E88BDCF21A8758F800B1D56A /* MyCameraViewController.m */,
 				E8BABBF71A891CE800051BCA /* CameraListViewController.h */,
 				E8BABBF81A891CE800051BCA /* CameraListViewController.m */,
+				E8BABBFA1A89237D00051BCA /* CalendarViewController.h */,
+				E8BABBFB1A89237D00051BCA /* CalendarViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -506,6 +511,7 @@
 				E88BDCE31A874B7300B1D56A /* CameraViewObject.m in Sources */,
 				E88BDCE51A874B7300B1D56A /* User.m in Sources */,
 				E88BDCD01A8745BD00B1D56A /* LoginViewController.m in Sources */,
+				E8BABBFC1A89237D00051BCA /* CalendarViewController.m in Sources */,
 				E88BDCD71A874B2D00B1D56A /* AFAppDotNetAPIClient.m in Sources */,
 				E88BDCED1A874F5C00B1D56A /* MenuTableViewController.m in Sources */,
 				E8E0704D1A85C63C00881F09 /* main.m in Sources */,

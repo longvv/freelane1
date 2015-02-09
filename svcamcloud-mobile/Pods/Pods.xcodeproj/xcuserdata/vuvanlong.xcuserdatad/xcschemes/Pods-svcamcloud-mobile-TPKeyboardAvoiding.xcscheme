@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B25434C3D786294352165382"
-               BuildableName = "libPods-svcamcloud-mobile.a"
-               BlueprintName = "Pods-svcamcloud-mobile"
+               BlueprintIdentifier = "D18C1C44B6B4157A48F30BFE"
+               BuildableName = "libPods-svcamcloud-mobile-TPKeyboardAvoiding.a"
+               BlueprintName = "Pods-svcamcloud-mobile-TPKeyboardAvoiding"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
