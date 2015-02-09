@@ -46,7 +46,7 @@
 //        NSString *strRecordList =[JSON valueForKeyPath:@"record_list"];
         NSDictionary *recordsFromResponse = [JSON valueForKeyPath:@"record_list"];
         NSMutableArray *mutableRecords  = nil;
-        if(recordsFromResponse != nil && [[NSNull null] isEqual: recordsFromResponse ]){
+        if(recordsFromResponse != nil && ![[NSNull null] isEqual: recordsFromResponse ]){
             mutableRecords = [NSMutableArray arrayWithCapacity:[recordsFromResponse count]];
             for (NSString  *key in recordsFromResponse) {
                 NSDictionary *attributes = [recordsFromResponse objectForKey:key];
