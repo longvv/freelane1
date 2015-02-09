@@ -12,7 +12,9 @@
 @implementation WebServiceManager
 
 + (NSString*) listCameraWebServicePath{
-    return nil;
+    NSString *serviceBaseUrl = [self serviceBaseUrlString];
+    NSString *apiString = [NSString stringWithFormat:@"%@%@",serviceBaseUrl,@"/api/v1/cameras/list"];
+    return apiString;
 }
 
 + (NSString *) loginWebServicePath{

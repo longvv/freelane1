@@ -12,6 +12,7 @@
 @implementation AppAuthenticationManager
 + (NSString *) sessionKeyString{
     AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
+    NSString *sessionKey = appDelegate.sessionKey;
     return appDelegate.sessionKey;
 }
 
