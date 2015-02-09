@@ -11,6 +11,7 @@
 #import "User.h"
 #import "AppAuthenticationManager.h"
 #import "SettingViewController.h"
+#import "AppAuthenticationManager.h"
 
 @interface LoginViewController ()
 
@@ -42,6 +43,8 @@
 #pragma mark - LoginDelegate
 - (void)loginUser:(NSString *)email password:(NSString *)pass{
     [User loginWithUserEmail:email andPassword:pass successBlock:^(User *loginUser, NSString *userToken) {
+        [AppAuthenticationManager saveLogginUser:loginUser];
+        [AppAuthenticationManager saveSessionKey:userToken];
         MenuTableViewController* controller = [mainStoryboard instantiateViewControllerWithIdentifier:@"MenuTableViewController"];
         [self.navigationController pushViewController:controller animated:YES];
         

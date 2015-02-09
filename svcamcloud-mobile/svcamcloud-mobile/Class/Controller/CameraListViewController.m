@@ -7,6 +7,12 @@
 //
 
 #import "CameraListViewController.h"
+#import "Camera.h"
+
+@interface CameraListViewController()
+@property (strong, nonatomic) NSArray *cameraList;
+
+@end
 
 @implementation CameraListViewController
 
@@ -25,27 +31,43 @@
     
     [self dismissViewControllerAnimated:NO completion:nil];
 }
-
+- (void) viewDidAppear:(BOOL)animated{
+    [self loadCameraListData];
+}
 #pragma mark - TableView methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 4;
+    return self.cameraList.count;
 }
-
+- (void) loadCameraListData{
+    [Camera globalCameraListWithFinishBlock:^(NSArray *cameras) {
+        self.cameraList = cameras;
+        [self.tableView reloadData];
+        
+    } errorBlock:^(NSError *error) {
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Lỗi" message:@"Bị lỗi rồi" delegate:nil
+    cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alertView show];
+        
+    }];
+    
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"cameraCell"];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cameraCell"];
     }
+    Camera *cameraItem = [self.cameraList objectAtIndex:indexPath.row];
     
-    cell.textLabel.text = @"Camera name";
+    cell.textLabel.text = cameraItem.cameraName;
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if ([self.delegate respondsToSelector:@selector(selectCamera:)]) {
-        [self.delegate selectCamera:nil];
+        Camera *selectedCamera = [self.cameraList objectAtIndex:indexPath.row];
+        [self.delegate selectCamera:selectedCamera];
     }
     [self dismissViewControllerAnimated:NO completion:nil];
 }

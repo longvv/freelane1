@@ -38,6 +38,9 @@
     // show camera name is selected here.
 }
 
+- (void)loadCameraList{
+    
+}
 #pragma mark - TableView methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
