@@ -7,9 +7,13 @@
 //
 
 #import "MyRecordingViewController.h"
+#import "Record.h"
+#import "Camera.h"
 
 @interface MyRecordingViewController ()
 
+@property (strong, nonatomic) NSArray *recordList;
+@property (strong, nonatomic) NSString *strRecordDate;
 @end
 
 @implementation MyRecordingViewController
@@ -34,23 +38,49 @@
     }
 }
 
-- (void)selectCamera:(id)camera{
-    // show camera name is selected here.
+- (void)selectCamera:(Camera*)camera{
+    if(self.strRecordDate != nil){
+        [self loadRecordListRecordByCamera:camera inDay:self.strRecordDate];
+    }
+    else{
+        NSDate *today = [NSDate date];
+        NSCalendar *cal = [[NSCalendar alloc] init];
+       NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:[NSDate date]];
+        int year = [components year];
+        int month = [components month];
+        int day = [components day];
+        NSString *dateString = [NSString stringWithFormat:@"%d%d%d",year,month,day];
+        [self loadRecordListRecordByCamera:camera inDay:dateString];
+    }
 }
 
-- (void)loadCameraList{
-    
+- (void) loadRecordListRecordByCamera:(Camera *) camera inDay:(NSString *) recordDate{
+    [Record globalRecordListWithCameraCode:camera.cameraCode recordDate:recordDate andFinishBlock:^(NSArray *records) {
+        self.recordList = records;
+        [self.tableView reloadData];
+    } andErrorBlock:^(NSError *error) {
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Lỗi" message:@"Bị lỗi rồi" delegate:nil
+                                                 cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alertView show];
+        
+    }];
+
 }
+
 #pragma mark - TableView methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 2;
+    return self.recordList.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     RecordTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"RecordTableViewCell"];
     if (!cell) {
         cell = [[RecordTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"RecordTableViewCell"];
+        Record *recordItem = [self.recordList objectAtIndex:indexPath.row];
+        cell.lbRecordBegin.text = recordItem.startTime;
+        cell.lbRecordEnd.text = recordItem.endTime;
+        cell.lbRecordDate.text = self.strRecordDate;
     }
     
     return cell;

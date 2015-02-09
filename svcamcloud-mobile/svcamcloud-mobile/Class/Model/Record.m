@@ -39,16 +39,21 @@
     return self;
 }
 
-+ (NSURLSessionDataTask *)globalRecordListWithCameraCode:(NSString *)cameraCode andFinishBlock:(void (^)(NSArray *records))finishBlock andErrorBlock:(void (^)(NSError *error))errorBlock{
++ (NSURLSessionDataTask *)globalRecordListWithCameraCode:(NSString *)cameraCode recordDate:(NSString *) date andFinishBlock:(void (^)(NSArray *records))finishBlock andErrorBlock:(void (^)(NSError *error))errorBlock{
        [[AFAppDotNetAPIClient sharedClient].requestSerializer setValue:[AppAuthenticationManager sessionKeyString] forHTTPHeaderField:@"X-Tokens"];
-    return [[AFAppDotNetAPIClient sharedClient] GET:[WebServiceManager listCameraWebServicePath] parameters:cameraCode success:^(NSURLSessionDataTask * __unused task, id JSON) {
-        NSArray *recordsFromResponse = [JSON valueForKeyPath:@"record_list"];
-        NSMutableArray *mutableRecords = [NSMutableArray arrayWithCapacity:[recordsFromResponse count]];
-        for (NSDictionary *attributes in recordsFromResponse) {
-            Record *record = [[Record alloc] initWithAttributes:attributes];
-            [mutableRecords addObject:record];
+    NSString *urlString = [[WebServiceManager listRecordWebServicePath]stringByAppendingString:[NSString stringWithFormat:@"/%@/%@",cameraCode,date]];
+    return [[AFAppDotNetAPIClient sharedClient] GET: urlString parameters:nil success:^(NSURLSessionDataTask * __unused task, id JSON) {
+//        NSString *strRecordList =[JSON valueForKeyPath:@"record_list"];
+        NSDictionary *recordsFromResponse = [JSON valueForKeyPath:@"record_list"];
+        NSMutableArray *mutableRecords  = nil;
+        if(recordsFromResponse != nil && [[NSNull null] isEqual: recordsFromResponse ]){
+            mutableRecords = [NSMutableArray arrayWithCapacity:[recordsFromResponse count]];
+            for (NSString  *key in recordsFromResponse) {
+                NSDictionary *attributes = [recordsFromResponse objectForKey:key];
+                Record *record = [[Record alloc] initWithAttributes:attributes];
+                [mutableRecords addObject:record];
+            }
         }
-        
         if (finishBlock) {
             finishBlock([NSArray arrayWithArray:mutableRecords]);
         }

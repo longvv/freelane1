@@ -66,12 +66,15 @@
     headerLabel.text = headerTitle;
     return headerLabel;
 }
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return self.groupsCameraList.count;
 }
+
 - (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 30;
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"cameraCell"];

@@ -24,7 +24,10 @@
 }
 
 +(NSString *)listRecordWebServicePath{
-    return nil;
+    NSString *serviceBaseUrl = [self serviceBaseUrlString];
+    NSString *apiString = [NSString stringWithFormat:@"%@%@",serviceBaseUrl,@"/api/v1/camera/record"];
+    return apiString;
+
 }
 
 +(NSString *) viewCameraWebServicePath{

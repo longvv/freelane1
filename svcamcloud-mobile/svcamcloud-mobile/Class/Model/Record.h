@@ -20,6 +20,6 @@
 @property (readonly, nonatomic, strong) NSString *viewRecordUrl;
 
 - (instancetype)initWithAttributes:(NSDictionary *)attributes;
-+ (NSURLSessionDataTask *)globalRecordListWithCameraCode:(NSString *)cameraCode andFinishBlock:(void (^)(NSArray *records))finishBlock andErrorBlock:(void (^)(NSError *error))errorBlock;
++ (NSURLSessionDataTask *)globalRecordListWithCameraCode:(NSString *)cameraCode  recordDate:(NSString *) date andFinishBlock:(void (^)(NSArray *records))finishBlock andErrorBlock:(void (^)(NSError *error))errorBlock;
 
 @end
