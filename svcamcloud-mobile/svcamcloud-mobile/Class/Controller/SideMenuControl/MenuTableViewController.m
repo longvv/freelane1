@@ -52,6 +52,24 @@
     return 1;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 50.0;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    UIView* header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 50)];
+    UILabel* email = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, header.bounds.size.width-10, header.bounds.size.height)];
+    email.text = @"op@local.com";
+    email.font = [UIFont fontWithName:@"HelveticaNeue-Bold" size:18.0];
+    [header addSubview:email];
+    
+    UIView* endLine = [[UIView alloc] initWithFrame:CGRectMake(0, 49, header.bounds.size.width, 1)];
+    endLine.backgroundColor = [UIColor lightGrayColor];
+    [header addSubview:endLine];
+    
+    return header;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.

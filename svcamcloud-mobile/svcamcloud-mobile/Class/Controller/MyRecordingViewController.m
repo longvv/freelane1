@@ -29,7 +29,7 @@
         CameraListViewController *controller = segue.destinationViewController;
         controller.delegate = self;
     }else if ([segue.identifier isEqualToString:@"showCalendarSegue"]){
-        CalendarViewController *controller = segue.destinationViewController;
+        //CalendarViewController *controller = segue.destinationViewController;
         //controller.delegate = self;
     }
 }
