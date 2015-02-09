@@ -13,7 +13,7 @@
 
 + (NSString*) listCameraWebServicePath{
     NSString *serviceBaseUrl = [self serviceBaseUrlString];
-    NSString *apiString = [NSString stringWithFormat:@"%@%@",serviceBaseUrl,@"/api/v1/cameras/list"];
+    NSString *apiString = [NSString stringWithFormat:@"%@%@",serviceBaseUrl,@"/api/v1/camera/list"];
     return apiString;
 }
 

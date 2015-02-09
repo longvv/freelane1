@@ -11,6 +11,7 @@
 #import "AppAuthenticationManager.h"
 
 @interface Camera()
+@property (readwrite, strong, nonatomic) NSString *groupName;
 @property (readwrite, strong, nonatomic) NSString *cameraId;
 @property (readwrite, strong, nonatomic) NSString *groupId;
 @property (readwrite, strong, nonatomic) NSString *cameraCode;
@@ -35,26 +36,29 @@
     return self;
 }
 
-+ (NSURLSessionDataTask *)globalCameraListWithFinishBlock:(void (^)(NSArray *))finishBlock errorBlock:(void (^)(NSError *))errorBLock{
++ (NSURLSessionDataTask *)globalCameraListWithFinishBlock:(void (^)(NSMutableDictionary *))finishBlock errorBlock:(void (^)(NSError *))errorBLock{
        [[AFAppDotNetAPIClient sharedClient].requestSerializer setValue:[AppAuthenticationManager sessionKeyString] forHTTPHeaderField:@"X-Tokens"];
     return [[AFAppDotNetAPIClient sharedClient] GET:[WebServiceManager listCameraWebServicePath] parameters:nil success:^(NSURLSessionDataTask * __unused task, id JSON) {
-        NSArray *cameraFromResponse = [JSON valueForKeyPath:@"camera_list"];
-        NSMutableArray *mutablecameras = [NSMutableArray arrayWithCapacity:[cameraFromResponse count]];
-        for (NSDictionary *attributes in cameraFromResponse) {
-            Camera *camera = [[Camera alloc] initWithAttributes:attributes];
-            [mutablecameras addObject:camera];
+        NSDictionary *cameraFromResponse = [JSON valueForKeyPath:@"camera_list"];
+//        NSMutableArray *mutablecameras = [NSMutableArray arrayWithCapacity:[cameraFromResponse count]];
+        NSMutableDictionary *groupCameraDict = [[NSMutableDictionary alloc]init];
+        for (NSString *key in cameraFromResponse) {
+            NSMutableArray *groupCamera = [[NSMutableArray alloc]init];
+            NSArray *cameraList = [cameraFromResponse objectForKey:key];
+            for(NSDictionary *attribute in cameraList){
+                Camera *camera = [[Camera alloc] initWithAttributes:attribute];
+                [groupCamera addObject:camera];
+            }
+            [groupCameraDict setObject:groupCamera forKey:key];
         }
-        
         if (finishBlock) {
-            finishBlock([NSArray arrayWithArray:mutablecameras]);
+            finishBlock(groupCameraDict);
         }
     } failure:^(NSURLSessionDataTask *__unused task, NSError *error) {
         if (errorBLock) {
             errorBLock(error);
         }
     }];
-
-    
 }
 
 + (NSURLSessionDataTask *)globalGetCameraViewURLWithCameraCode:(NSString *)cameraCode andFinishBlock:(void (^)(NSString *viewUrl))finishBlock errorBlock:(void (^)(NSError *))errorBLock{
