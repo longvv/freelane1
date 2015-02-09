@@ -23,6 +23,7 @@
 		E88BDCF31A8758F800B1D56A /* MyCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCF21A8758F800B1D56A /* MyCameraViewController.m */; };
 		E88BDCF51A87590900B1D56A /* MyCameraStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88BDCF41A87590900B1D56A /* MyCameraStoryboard.storyboard */; };
 		E88BDCF71A876AC700B1D56A /* MyRecordingStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88BDCF61A876AC700B1D56A /* MyRecordingStoryboard.storyboard */; };
+		E8BABAA61A890EF200051BCA /* RecordTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BABAA51A890EF200051BCA /* RecordTableViewCell.m */; };
 		E8E0704D1A85C63C00881F09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E0704C1A85C63C00881F09 /* main.m */; };
 		E8E070581A85C63C00881F09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E070571A85C63C00881F09 /* Images.xcassets */; };
 		E8E070671A85C63C00881F09 /* svcamcloud_mobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E070661A85C63C00881F09 /* svcamcloud_mobileTests.m */; };
@@ -83,6 +84,8 @@
 		E88BDCF21A8758F800B1D56A /* MyCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCameraViewController.m; sourceTree = "<group>"; };
 		E88BDCF41A87590900B1D56A /* MyCameraStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyCameraStoryboard.storyboard; sourceTree = "<group>"; };
 		E88BDCF61A876AC700B1D56A /* MyRecordingStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyRecordingStoryboard.storyboard; sourceTree = "<group>"; };
+		E8BABAA41A890EF200051BCA /* RecordTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordTableViewCell.h; sourceTree = "<group>"; };
+		E8BABAA51A890EF200051BCA /* RecordTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordTableViewCell.m; sourceTree = "<group>"; };
 		E8E070471A85C63C00881F09 /* svcamcloud-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "svcamcloud-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8E0704B1A85C63C00881F09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8E0704C1A85C63C00881F09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -312,6 +315,8 @@
 		E8E0707D1A85D92C00881F09 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E8BABAA41A890EF200051BCA /* RecordTableViewCell.h */,
+				E8BABAA51A890EF200051BCA /* RecordTableViewCell.m */,
 				E8E97E0B1A87B42600F34BDE /* LoginView.h */,
 				E8E97E0C1A87B42600F34BDE /* LoginView.m */,
 				E8E97E0E1A87B43700F34BDE /* LoginView.xib */,
@@ -480,6 +485,7 @@
 				E88BDCD91A874B2D00B1D56A /* WebServiceManager.m in Sources */,
 				E88BDCF31A8758F800B1D56A /* MyCameraViewController.m in Sources */,
 				E8E97E161A87BF3D00F34BDE /* SettingView.m in Sources */,
+				E8BABAA61A890EF200051BCA /* RecordTableViewCell.m in Sources */,
 				E88BDCEC1A874F5C00B1D56A /* CustomMenuCell.m in Sources */,
 				E88BDCF01A8758E400B1D56A /* MyRecordingViewController.m in Sources */,
 				E88BDCCF1A8745BD00B1D56A /* BaseViewController.m in Sources */,
