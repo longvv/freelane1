@@ -24,6 +24,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showCameraSegue"]) {
+        CameraListViewController *controller = segue.destinationViewController;
+        controller.delegate = self;
+    }
+}
+
+- (void)selectCamera:(id)camera{
+    // show camera name is selected here.
+}
 
 #pragma mark - TableView methods
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

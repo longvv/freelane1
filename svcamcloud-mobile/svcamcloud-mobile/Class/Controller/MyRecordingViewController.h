@@ -8,8 +8,9 @@
 
 #import "BaseViewController.h"
 #import "RecordTableViewCell.h"
+#import "CameraListViewController.h"
 
-@interface MyRecordingViewController : BaseViewController<UITableViewDataSource, UITableViewDelegate>
+@interface MyRecordingViewController : BaseViewController<UITableViewDataSource, UITableViewDelegate, CameraListDelegate>
 @property (weak, nonatomic) IBOutlet UIView *MenuView;
 @property (weak, nonatomic) IBOutlet UIView *titleBarView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;

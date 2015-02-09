@@ -29,6 +29,9 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="hc5-G5-tY6" kind="presentation" identifier="showCameraSegue" modalPresentationStyle="fullScreen" animates="NO" id="yGH-A7-WLd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rx-zo-yp1">
                                         <rect key="frame" x="160" y="0.0" width="150" height="50"/>
@@ -217,6 +220,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nw5-j8-eCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="453" y="214"/>
+        </scene>
+        <!--Camera List View Controller-->
+        <scene sceneID="k1R-LF-R3q">
+            <objects>
+                <viewController storyboardIdentifier="CameraListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hc5-G5-tY6" customClass="CameraListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ABw-KZ-CmG"/>
+                        <viewControllerLayoutGuide type="bottom" id="brd-Or-umQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="42c-VG-4Tz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lK5-qk-1bL">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="OKg-tm-1Uo">
+                                <rect key="frame" x="0.0" y="93" width="320" height="295"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="295" id="kTb-u1-iId"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="hc5-G5-tY6" id="8Ru-Hb-xP0"/>
+                                    <outlet property="delegate" destination="hc5-G5-tY6" id="Ocq-aG-fLT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="OKg-tm-1Uo" secondAttribute="centerX" id="5e2-vf-4l7"/>
+                            <constraint firstAttribute="centerY" secondItem="OKg-tm-1Uo" secondAttribute="centerY" constant="-0.5" id="6vs-Sa-VwB"/>
+                            <constraint firstItem="lK5-qk-1bL" firstAttribute="top" secondItem="42c-VG-4Tz" secondAttribute="top" id="GRB-XX-jUW"/>
+                            <constraint firstAttribute="trailing" secondItem="OKg-tm-1Uo" secondAttribute="trailing" id="eH5-Uj-WsO"/>
+                            <constraint firstAttribute="trailing" secondItem="lK5-qk-1bL" secondAttribute="trailing" id="gT3-gL-GxM"/>
+                            <constraint firstItem="lK5-qk-1bL" firstAttribute="leading" secondItem="42c-VG-4Tz" secondAttribute="leading" id="peP-kw-WV6"/>
+                            <constraint firstAttribute="bottom" secondItem="lK5-qk-1bL" secondAttribute="bottom" id="sbO-iT-BxW"/>
+                            <constraint firstItem="OKg-tm-1Uo" firstAttribute="leading" secondItem="42c-VG-4Tz" secondAttribute="leading" id="zb0-M8-0Eb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lo9-JX-ouL"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="tableHeightContraint" destination="kTb-u1-iId" id="UCn-eg-qfg"/>
+                        <outlet property="tableView" destination="OKg-tm-1Uo" id="5Ja-zU-Ovy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oul-VI-OXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847" y="835"/>
         </scene>
     </scenes>
     <resources>
