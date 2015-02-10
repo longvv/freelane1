@@ -49,7 +49,7 @@
         int year = [components year];
         int month = [components month];
         int day = [components day];
-        NSString *dateString = [NSString stringWithFormat:@"%d%d%d",year,month,day];
+        NSString *dateString = [NSString stringWithFormat:@"%d%02d%02d",year,month,day];
         [self loadRecordListRecordByCamera:camera inDay:dateString];
     }
 }
