@@ -25,8 +25,8 @@
     NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:recordStartTime];
     int year = [components year];
     int month = [components month];
-    int day = [components date];
-    NSString *dateString = [NSString stringWithFormat:@"%d/%02d/%02d",year,month,day];
+    int day = [components day];
+    NSString *dateString = [NSString stringWithFormat:@"%d/%02d/%02d",day,month,year];
     return dateString;
 }
 @end

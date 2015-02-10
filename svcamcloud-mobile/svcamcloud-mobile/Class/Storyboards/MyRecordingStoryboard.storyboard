@@ -137,6 +137,9 @@
                                                     <state key="normal" image="ic_more">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="actionMenu:" destination="BCO-19-pFJ" eventType="touchUpInside" id="uAD-Df-022"/>
+                                                    </connections>
                                                 </button>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2j8-c1-YbJ" userLabel="endLine">
                                                     <rect key="frame" x="0.0" y="49" width="320" height="1"/>

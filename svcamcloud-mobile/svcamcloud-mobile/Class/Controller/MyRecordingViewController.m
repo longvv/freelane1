@@ -54,10 +54,21 @@
         [self loadRecordListRecordByCamera:camera inDay:dateString];
     }
 }
-
+- (void) sortRecordList{
+    NSSortDescriptor *sortDescriptor;
+    sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"startTime"
+                                                 ascending:NO];
+    NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
+    self.recordList = [self.recordList sortedArrayUsingDescriptors:sortDescriptors];
+    sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"endTime"
+                                                 ascending:NO];
+     self.recordList = [self.recordList sortedArrayUsingDescriptors:sortDescriptors];
+}
 - (void) loadRecordListRecordByCamera:(Camera *) camera inDay:(NSString *) recordDate{
     [Record globalRecordListWithCameraCode:camera.cameraCode recordDate:recordDate andFinishBlock:^(NSArray *records) {
+        
         self.recordList = records;
+        [self sortRecordList];
         [self.tableView reloadData];
     } andErrorBlock:^(NSError *error) {
         UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Lỗi" message:@"Bị lỗi rồi" delegate:nil
@@ -87,6 +98,7 @@
     cell.lbRecordBegin.text = startRecordTimeString;
     cell.lbRecordEnd.text = endRecordTimeString;
     cell.lbRecordDate.text = recordDateString;
+    cell.recordDownloadLink = recordItem.viewRecordUrl;
     
     return cell;
 }

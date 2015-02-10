@@ -10,4 +10,8 @@
 
 @implementation RecordTableViewCell
 
+- (IBAction)actionMenu:(id)sender {
+    NSURL *url = [NSURL URLWithString:self.recordDownloadLink];
+    [[UIApplication sharedApplication] openURL:url];
+}
 @end

@@ -12,5 +12,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lbRecordDate;
 @property (weak, nonatomic) IBOutlet UILabel *lbRecordBegin;
 @property (weak, nonatomic) IBOutlet UILabel *lbRecordEnd;
+@property (strong, nonatomic) NSString *recordDownloadLink;
+- (IBAction)actionMenu:(id)sender;
 
 @end
