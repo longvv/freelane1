@@ -10,6 +10,8 @@
 #import "Record.h"
 #import "Camera.h"
 #import "DateTimeUtil.h"
+#import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface MyRecordingViewController ()
 
@@ -99,6 +101,23 @@
     cell.lbRecordEnd.text = endRecordTimeString;
     cell.lbRecordDate.text = recordDateString;
     cell.recordDownloadLink = recordItem.viewRecordUrl;
+    [cell setPlayActionBlock:^{
+        NSURL *url = [NSURL URLWithString:recordItem.viewRecordUrl];
+        if(self.playContainer.frame.size.height == 0){
+            self.playContainer.frame = CGRectMake(self.playContainer.frame.origin.x, 100, self.playContainer.frame.size.width, 280);
+        }
+        CGRect titleBarFrame = self.titleBarView.frame;
+        titleBarFrame.origin.y = self.playContainer.frame.origin.y + self.playContainer.frame.size.height;
+        self.titleBarView.frame = titleBarFrame;
+        CGRect tableViewFrame = self.tableView.frame;
+        tableViewFrame.size.height = self.view.frame.size.height - self.titleBarView.frame.origin.y - self.titleBarView.frame.size.height;
+        tableViewFrame.origin.y = self.titleBarView.frame.origin.y + self.titleBarView.frame.size.height;
+        self.tableView.frame = tableViewFrame;
+        UIWebView *webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0, self.playContainer.frame.size.width, self.playContainer.frame.size.height)];
+        [self.playContainer addSubview:webView];
+        NSURLRequest *request = [[NSURLRequest alloc]initWithURL:url];
+        [webView loadRequest:request];
+    }];
     
     return cell;
 }

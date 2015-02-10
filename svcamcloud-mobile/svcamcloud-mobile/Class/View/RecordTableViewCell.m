@@ -7,11 +7,14 @@
 //
 
 #import "RecordTableViewCell.h"
+#import <AVFoundation/AVFoundation.h>
+
 
 @implementation RecordTableViewCell
 
 - (IBAction)actionMenu:(id)sender {
-    NSURL *url = [NSURL URLWithString:self.recordDownloadLink];
-    [[UIApplication sharedApplication] openURL:url];
+    if(self.playActionBlock){
+        self.playActionBlock();
+    }
 }
 @end

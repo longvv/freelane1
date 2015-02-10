@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lbRecordBegin;
 @property (weak, nonatomic) IBOutlet UILabel *lbRecordEnd;
 @property (strong, nonatomic) NSString *recordDownloadLink;
+@property (nonatomic, copy) void (^playActionBlock)(void);
 - (IBAction)actionMenu:(id)sender;
 
 @end
