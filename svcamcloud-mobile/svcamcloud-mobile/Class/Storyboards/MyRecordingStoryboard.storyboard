@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aRi-RO-uME">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--My Recording View Controller-->
@@ -63,9 +62,9 @@
                                     <constraint firstAttribute="bottom" secondItem="3rx-zo-yp1" secondAttribute="bottom" id="sTb-3j-WrI"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b8w-wN-WuC">
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="01N-BX-Omd">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EU5-Yy-pSm" userLabel="title">
                                 <rect key="frame" x="0.0" y="52" width="320" height="50"/>
                                 <subviews>
@@ -194,9 +193,7 @@
                             <constraint firstItem="4jG-6A-czK" firstAttribute="leading" secondItem="1xL-jo-Mu2" secondAttribute="leading" id="B7h-dR-qVY"/>
                             <constraint firstAttribute="trailing" secondItem="V53-0n-RxV" secondAttribute="trailing" id="Fum-zb-52w"/>
                             <constraint firstAttribute="trailing" secondItem="4jG-6A-czK" secondAttribute="trailing" id="LOc-jz-k6c"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="b8w-wN-WuC" secondAttribute="trailing" constant="-16" id="UKh-QR-eAf"/>
                             <constraint firstItem="EU5-Yy-pSm" firstAttribute="top" secondItem="V53-0n-RxV" secondAttribute="bottom" constant="1" id="XIa-Rp-lKb"/>
-                            <constraint firstItem="b8w-wN-WuC" firstAttribute="leading" secondItem="1xL-jo-Mu2" secondAttribute="leadingMargin" constant="-16" id="dOy-n3-ZJb"/>
                             <constraint firstItem="V53-0n-RxV" firstAttribute="top" secondItem="1xL-jo-Mu2" secondAttribute="top" constant="1" id="hi2-el-gKC"/>
                             <constraint firstAttribute="trailing" secondItem="EU5-Yy-pSm" secondAttribute="trailing" id="iJd-BT-SMG"/>
                             <constraint firstItem="4jG-6A-czK" firstAttribute="top" secondItem="EU5-Yy-pSm" secondAttribute="bottom" constant="1" id="nf8-g4-hnI"/>
@@ -206,7 +203,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="MenuView" destination="V53-0n-RxV" id="cpr-Pl-Mtk"/>
-                        <outlet property="playContainer" destination="b8w-wN-WuC" id="iw7-je-wvV"/>
+                        <outlet property="playContainer" destination="01N-BX-Omd" id="Q0v-Dk-SWg"/>
                         <outlet property="tableView" destination="4jG-6A-czK" id="0yw-KN-isc"/>
                         <outlet property="titleBarView" destination="EU5-Yy-pSm" id="X8Z-C4-WBU"/>
                     </connections>

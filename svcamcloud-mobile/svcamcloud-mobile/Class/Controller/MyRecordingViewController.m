@@ -25,7 +25,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
-
+- (void) viewDidAppear:(BOOL)animated{
+    if(self.playContainer.frame.size.height > 0){
+        CGRect titleBarFrame = self.titleBarView.frame;
+        titleBarFrame.origin.y = self.playContainer.frame.origin.y + self.playContainer.frame.size.height;
+        self.titleBarView.frame = titleBarFrame;
+        CGRect tableViewFrame = self.tableView.frame;
+        tableViewFrame.size.height = self.view.frame.size.height - self.titleBarView.frame.origin.y - self.titleBarView.frame.size.height;
+        tableViewFrame.origin.y = self.titleBarView.frame.origin.y + self.titleBarView.frame.size.height;
+        self.tableView.frame = tableViewFrame;
+    }
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -113,10 +123,10 @@
         tableViewFrame.size.height = self.view.frame.size.height - self.titleBarView.frame.origin.y - self.titleBarView.frame.size.height;
         tableViewFrame.origin.y = self.titleBarView.frame.origin.y + self.titleBarView.frame.size.height;
         self.tableView.frame = tableViewFrame;
-        UIWebView *webView = [[UIWebView alloc]initWithFrame:CGRectMake(0, 0, self.playContainer.frame.size.width, self.playContainer.frame.size.height)];
-        [self.playContainer addSubview:webView];
         NSURLRequest *request = [[NSURLRequest alloc]initWithURL:url];
-        [webView loadRequest:request];
+        
+//        [webView loadHTMLString:playPath baseURL:nil];
+        [self.playContainer loadRequest:request];
     }];
     
     return cell;

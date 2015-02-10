@@ -15,6 +15,6 @@
 @property (weak, nonatomic) IBOutlet UIView *MenuView;
 @property (weak, nonatomic) IBOutlet UIView *titleBarView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UIView *playContainer;
+@property (weak, nonatomic) IBOutlet UIWebView *playContainer;
 
 @end
