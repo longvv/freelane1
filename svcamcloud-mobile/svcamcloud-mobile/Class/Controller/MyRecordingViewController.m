@@ -9,6 +9,7 @@
 #import "MyRecordingViewController.h"
 #import "Record.h"
 #import "Camera.h"
+#import "DateTimeUtil.h"
 
 @interface MyRecordingViewController ()
 
@@ -77,11 +78,15 @@
     RecordTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"RecordTableViewCell"];
     if (!cell) {
         cell = [[RecordTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"RecordTableViewCell"];
-        Record *recordItem = [self.recordList objectAtIndex:indexPath.row];
-        cell.lbRecordBegin.text = recordItem.startTime;
-        cell.lbRecordEnd.text = recordItem.endTime;
-        cell.lbRecordDate.text = self.strRecordDate;
+       
     }
+    Record *recordItem = [self.recordList objectAtIndex:indexPath.row];
+    NSString *startRecordTimeString = [DateTimeUtil getTimeStringFromTimeInterval:recordItem.startTime];
+    NSString *endRecordTimeString = [DateTimeUtil getTimeStringFromTimeInterval:recordItem.endTime];
+    NSString *recordDateString = [DateTimeUtil getDateStringFromTimeInterval:recordItem.startTime];
+    cell.lbRecordBegin.text = startRecordTimeString;
+    cell.lbRecordEnd.text = endRecordTimeString;
+    cell.lbRecordDate.text = recordDateString;
     
     return cell;
 }

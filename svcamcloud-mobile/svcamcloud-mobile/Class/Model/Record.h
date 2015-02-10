@@ -13,8 +13,8 @@
 
 @property (readonly,  nonatomic) NSInteger recordId;
 @property (readonly, nonatomic, strong) NSString *cameraCode;
-@property (readonly, nonatomic, strong) NSString *startTime;
-@property (readonly, nonatomic, strong) NSString *endTime;
+@property (readonly, nonatomic) long startTime;
+@property (readonly, nonatomic) long endTime;
 @property (readonly, nonatomic, strong) NSString *recordFile;
 @property (readonly, nonatomic, strong) NSString *recordType;
 @property (readonly, nonatomic, strong) NSString *viewRecordUrl;

@@ -14,8 +14,8 @@
 
 @property (readwrite,  nonatomic) NSInteger recordId;
 @property (readwrite, nonatomic, strong) NSString *cameraCode;
-@property (readwrite, nonatomic, strong) NSString *startTime;
-@property (readwrite, nonatomic, strong) NSString *endTime;
+@property (readwrite, nonatomic) long startTime;
+@property (readwrite, nonatomic) long endTime;
 @property (readwrite, nonatomic, strong) NSString *recordFile;
 @property (readwrite, nonatomic, strong) NSString *recordType;
 @property (readwrite, nonatomic, strong) NSString *viewRecordUrl;
@@ -30,8 +30,8 @@
     
     self.recordId  = [[attributes valueForKeyPath:@"id"]integerValue] ;
     self.cameraCode = [attributes valueForKeyPath:@"camera_code"];
-    self.startTime = [attributes valueForKey:@"start_time"];
-    self.endTime = [attributes valueForKey:@"end_time"];
+    self.startTime = [[attributes valueForKey:@"start_time"]longLongValue];
+    self.endTime = [[attributes valueForKey:@"end_time"]longLongValue];
     self.recordFile = [attributes valueForKey:@"record_file"];
     self.recordType = [attributes valueForKey:@"type"];
     self.viewRecordUrl = [attributes valueForKey:@"view_record_url"];
