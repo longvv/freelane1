@@ -12,6 +12,9 @@
 #import "DateTimeUtil.h"
 #import <AVFoundation/AVFoundation.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import "AFAppDotNetAPIClient.h"
+#import "AFHTTPRequestOperation.h"
+#import "ALAssetsLibrary+CustomPhotoAlbum.h"
 
 @interface MyRecordingViewController ()
 
@@ -97,6 +100,63 @@
     return self.recordList.count;
 }
 
+- (void) downloadRecording:(NSString *) downloadUrl{
+    NSURL *url = [NSURL URLWithString:downloadUrl];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+    
+    NSString *fullPath = [NSTemporaryDirectory() stringByAppendingPathComponent:[url lastPathComponent]];
+    
+    [operation setOutputStream:[NSOutputStream outputStreamToFileAtPath:fullPath append:NO]];
+    
+    [operation setDownloadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
+       
+    }];
+    
+    [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSError *error;
+        NSDictionary *fileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:fullPath error:&error];
+        
+        if (error) {
+            NSLog(@"ERR: %@", [error description]);
+        } else {
+            ALAssetsLibrary* library = [[ALAssetsLibrary alloc]init];
+            if ([library videoAtPathIsCompatibleWithSavedPhotosAlbum:url])
+            {
+                NSURL *clipURl = [NSURL URLWithString:fullPath];
+                [library writeVideoAtPathToSavedPhotosAlbum:clipURl completionBlock:^(NSURL *assetURL, NSError *error)
+                 {
+                     
+                 }];   
+            }
+        }
+        
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"ERR: %@", [error description]);
+    }];
+    
+    [operation start];
+    
+}
+- (void) playRecording:(Record *) recordItem{
+    NSURL *url = [NSURL URLWithString:recordItem.viewRecordUrl];
+    if(self.playContainer.frame.size.height == 0){
+        self.playContainer.frame = CGRectMake(self.playContainer.frame.origin.x, 100, self.playContainer.frame.size.width, 280);
+    }
+    CGRect titleBarFrame = self.titleBarView.frame;
+    titleBarFrame.origin.y = self.playContainer.frame.origin.y + self.playContainer.frame.size.height;
+    self.titleBarView.frame = titleBarFrame;
+    CGRect tableViewFrame = self.tableView.frame;
+    tableViewFrame.size.height = self.view.frame.size.height - self.titleBarView.frame.origin.y - self.titleBarView.frame.size.height;
+    tableViewFrame.origin.y = self.titleBarView.frame.origin.y + self.titleBarView.frame.size.height;
+    self.tableView.frame = tableViewFrame;
+    NSURLRequest *request = [[NSURLRequest alloc]initWithURL:url];
+    
+    //        [webView loadHTMLString:playPath baseURL:nil];
+    [self.playContainer loadRequest:request];
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     RecordTableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"RecordTableViewCell"];
     if (!cell) {
@@ -112,21 +172,8 @@
     cell.lbRecordDate.text = recordDateString;
     cell.recordDownloadLink = recordItem.viewRecordUrl;
     [cell setPlayActionBlock:^{
-        NSURL *url = [NSURL URLWithString:recordItem.viewRecordUrl];
-        if(self.playContainer.frame.size.height == 0){
-            self.playContainer.frame = CGRectMake(self.playContainer.frame.origin.x, 100, self.playContainer.frame.size.width, 280);
-        }
-        CGRect titleBarFrame = self.titleBarView.frame;
-        titleBarFrame.origin.y = self.playContainer.frame.origin.y + self.playContainer.frame.size.height;
-        self.titleBarView.frame = titleBarFrame;
-        CGRect tableViewFrame = self.tableView.frame;
-        tableViewFrame.size.height = self.view.frame.size.height - self.titleBarView.frame.origin.y - self.titleBarView.frame.size.height;
-        tableViewFrame.origin.y = self.titleBarView.frame.origin.y + self.titleBarView.frame.size.height;
-        self.tableView.frame = tableViewFrame;
-        NSURLRequest *request = [[NSURLRequest alloc]initWithURL:url];
-        
-//        [webView loadHTMLString:playPath baseURL:nil];
-        [self.playContainer loadRequest:request];
+//        [self downloadRecording:recordItem.viewRecordUrl];
+        [self playRecording:recordItem];
     }];
     
     return cell;
