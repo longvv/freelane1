@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		441009F21A87BB4A006AEA75 /* UserDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 441009F11A87BB4A006AEA75 /* UserDataManager.m */; };
+		446E23091A8A65F900CF3320 /* DateTimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 446E23081A8A65F900CF3320 /* DateTimeUtil.m */; };
+		446E230B1A8A807100CF3320 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446E230A1A8A807000CF3320 /* AVFoundation.framework */; };
+		446E230E1A8AA0AB00CF3320 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = 446E230D1A8AA0AB00CF3320 /* ALAssetsLibrary+CustomPhotoAlbum.m */; };
 		E88BDCCF1A8745BD00B1D56A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCCC1A8745BD00B1D56A /* BaseViewController.m */; };
 		E88BDCD01A8745BD00B1D56A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCCE1A8745BD00B1D56A /* LoginViewController.m */; };
 		E88BDCD71A874B2D00B1D56A /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E88BDCD21A874B2D00B1D56A /* AFAppDotNetAPIClient.m */; };
@@ -56,6 +59,11 @@
 		441009D31A867BC3006AEA75 /* CameraStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraStatus.h; sourceTree = "<group>"; };
 		441009F01A87BB4A006AEA75 /* UserDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataManager.h; sourceTree = "<group>"; };
 		441009F11A87BB4A006AEA75 /* UserDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataManager.m; sourceTree = "<group>"; };
+		446E23071A8A65F900CF3320 /* DateTimeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimeUtil.h; sourceTree = "<group>"; };
+		446E23081A8A65F900CF3320 /* DateTimeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimeUtil.m; sourceTree = "<group>"; };
+		446E230A1A8A807000CF3320 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		446E230C1A8AA0AB00CF3320 /* ALAssetsLibrary+CustomPhotoAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ALAssetsLibrary+CustomPhotoAlbum.h"; path = "svcamcloud-mobile/Class/ALAssetsLibrary+CustomPhotoAlbum.h"; sourceTree = SOURCE_ROOT; };
+		446E230D1A8AA0AB00CF3320 /* ALAssetsLibrary+CustomPhotoAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ALAssetsLibrary+CustomPhotoAlbum.m"; path = "svcamcloud-mobile/Class/ALAssetsLibrary+CustomPhotoAlbum.m"; sourceTree = SOURCE_ROOT; };
 		DA1672C6B980360E94164D6B /* libPods-svcamcloud-mobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-svcamcloud-mobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37422592227F7C03A2B8226 /* Pods-svcamcloud-mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-svcamcloud-mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-svcamcloud-mobile/Pods-svcamcloud-mobile.debug.xcconfig"; sourceTree = "<group>"; };
 		E88BDCCB1A8745BD00B1D56A /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -120,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				446E230B1A8A807100CF3320 /* AVFoundation.framework in Frameworks */,
 				ED2DD2A6DB78429A81CE4D8B /* libPods-svcamcloud-mobile.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,6 +163,7 @@
 		512681CA74A2B067D5186950 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				446E230A1A8A807000CF3320 /* AVFoundation.framework */,
 				DA1672C6B980360E94164D6B /* libPods-svcamcloud-mobile.a */,
 			);
 			name = Frameworks;
@@ -340,6 +350,8 @@
 		E8E0707E1A85D92C00881F09 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				446E230C1A8AA0AB00CF3320 /* ALAssetsLibrary+CustomPhotoAlbum.h */,
+				446E230D1A8AA0AB00CF3320 /* ALAssetsLibrary+CustomPhotoAlbum.m */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -349,6 +361,8 @@
 			children = (
 				E8E97E111A87B76A00F34BDE /* UIView+Extend.h */,
 				E8E97E121A87B76A00F34BDE /* UIView+Extend.m */,
+				446E23071A8A65F900CF3320 /* DateTimeUtil.h */,
+				446E23081A8A65F900CF3320 /* DateTimeUtil.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -504,6 +518,7 @@
 				E88BDCD81A874B2D00B1D56A /* AppAuthenticationManager.m in Sources */,
 				E8E070801A85D92C00881F09 /* SettingViewController.m in Sources */,
 				E8E97E0D1A87B42600F34BDE /* LoginView.m in Sources */,
+				446E23091A8A65F900CF3320 /* DateTimeUtil.m in Sources */,
 				E88BDCE21A874B7300B1D56A /* Camera.m in Sources */,
 				E8E0707F1A85D92C00881F09 /* AppDelegate.m in Sources */,
 				E8E97E131A87B76A00F34BDE /* UIView+Extend.m in Sources */,
@@ -511,6 +526,7 @@
 				E88BDCE31A874B7300B1D56A /* CameraViewObject.m in Sources */,
 				E88BDCE51A874B7300B1D56A /* User.m in Sources */,
 				E88BDCD01A8745BD00B1D56A /* LoginViewController.m in Sources */,
+				446E230E1A8AA0AB00CF3320 /* ALAssetsLibrary+CustomPhotoAlbum.m in Sources */,
 				E8BABBFC1A89237D00051BCA /* CalendarViewController.m in Sources */,
 				E88BDCD71A874B2D00B1D56A /* AFAppDotNetAPIClient.m in Sources */,
 				E88BDCED1A874F5C00B1D56A /* MenuTableViewController.m in Sources */,
